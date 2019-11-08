@@ -1,0 +1,27 @@
+{
+  "name": "mytheme",
+  "description": "Agence immobiliere theme",
+  "private": false,
+  "author": "audrey",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^1.9.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "brunch-browser-sync": "0.1.2",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "copycat-brunch": "^1.1.0",
+    "sass-brunch": "^2.10.8",
+    "uglify-js-brunch": "^2"
+  }
+}
