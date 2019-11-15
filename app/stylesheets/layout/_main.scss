@@ -1,0 +1,37 @@
+.main {
+    margin: 6em auto;
+    width: 85vw;
+
+    .ventes-chalets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+        background: $background-color;
+
+        &__title {
+            flex-basis: 100%;
+            margin: 0.5em 2em;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .locations-chalets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 4em 0;
+        background: $background-color;
+
+        &__title {
+            flex-basis: 100%;
+            margin: 0.5em 2em;
+            text-transform: uppercase;
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,41 @@
+.field {
+    width: 65%;
+    padding: 1em;
+
+    label {
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        padding: 0.7em 0;
+    }
+
+    input[type=text], input[type=email], textarea {
+        padding: 0.7em;
+        font-size: 1em;
+        color: $nd-text-color;
+        width: 100%;
+        border: none;
+        background-color: lighten($nd-color, 10);
+    }
+
+    textarea {
+        height: 10em;
+    }
+
+    button[type=submit] {
+        background-color: white;
+        color: white;
+        font-size: 0.8em;
+        padding: 0.8em;
+        font-weight: 700;
+        transition: 0.5s;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            background-color: lighten(red, 20);
+            color: black;
+        }
+    }
+}

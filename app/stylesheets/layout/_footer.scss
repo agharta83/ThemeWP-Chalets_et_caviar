@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+}
+
+.copyright__title {
+    font-size: 0.8em;
+    margin: 0.2em;
+}
+
+.copyright__text {
+    font-size: 0.7em;
+    margin: 0.2em;
+}
+

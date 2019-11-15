@@ -1,0 +1,97 @@
+.hero {
+    text-align: center;
+
+    &__title {
+        text-align: center;
+        margin: 0.5em auto 0 auto;
+        font-size: 7em;
+        color: $nd-text-color;
+        font-family: $font-title;
+
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &-st {
+            animation: showup 7s 1;
+            animation-fill-mode: forwards;
+        }
+
+        &-nd {
+            width: 0px;
+            animation: reveal 7s 1;
+            animation-fill-mode: forwards;
+        }
+
+        &-nd span {
+            margin-left: -350px;
+            animation: slidein 7s 1;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &__stroke {
+        margin: 0 auto;
+        width: 13em;
+        display: block;
+
+        &::before {
+            content: '';
+            background: $nd-color;
+            display: block;
+            margin-bottom: .3rem;
+            width: 100%;
+            height: .25rem;
+        }
+
+        &::after {
+            content: '';
+            background: $nd-color;
+            height: 1px;
+            display: block;
+            margin-bottom: 0.5em;
+            width: 100%;
+
+        }
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-family: $nd-font;
+        color: $nd-text-color;
+    }
+
+    &__word {
+        margin: 1em;
+        height: 15px;
+        color: $nd-text-color;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-family: 'Poppins', $fallback-font-stack;
+        @include text-shadow(2px,2px,2px,rgba(0,0,0,.25));
+        padding: 1.5em;
+        text-transform: uppercase;
+    }
+}
+
+@keyframes showup {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes slidein {
+    0% { margin-left:-350px; }
+    20% { margin-left:-350px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0; width:0px;}
+    20% {opacity:1; width:0px;}
+    30% {width:350px;}
+    80% {opacity:1;}
+    100% {opacity:1; width:350px;}
+}

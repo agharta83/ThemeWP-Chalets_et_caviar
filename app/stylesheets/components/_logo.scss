@@ -1,0 +1,13 @@
+.logo {
+    width: 300px;
+    height: 80px;
+    padding: 0 0.8em;
+
+    &__img {
+        width: 50%; 
+    }
+
+    &__baseline {
+        font-size: 0.8em;
+    }
+}

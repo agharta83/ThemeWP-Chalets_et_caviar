@@ -10,14 +10,13 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "animejs": "^3.1.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^1.9.1",
-    "normalize.css": "^8.0.1",
-    "popper.js": "^1.14.7"
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "brunch-browser-sync": "0.1.2",
+    "auto-reload-brunch": "^2",
     "brunch": "^2",
     "clean-css-brunch": "^2",
     "copycat-brunch": "^1.1.0",

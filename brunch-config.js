@@ -1,5 +1,10 @@
 exports.files = {
-    javascripts: {joinTo: 'app.js'},
+    javascripts: {
+      joinTo: {
+        'js/app.js': /^app/,
+        'js/vendor.js': /^node_modules/
+      }
+    },
     stylesheets: {
       joinTo: {
         // Contiendra tous les fichiers CSS / SCSS de app
@@ -14,23 +19,22 @@ exports.plugins = {
     copycat: {
       "fonts": ["node_modules/font-awesome/fonts"]
     },
-    browserSync: {
-      files: ["*"],
-      port: 8000,
-      server: "app/",
-      open: false
-    }
 };
   
 exports.npm = {
-    styles: {
-      // Je récupére mes CSS depuis node_modules
-      "normalize.css": ["normalize.css "],
-      "font-awesome": ["css/font-awesome.css"]
-    }
+  enabled: true,
+  globals: {
+    $: 'jquery',
+    jQuery: 'jquery'
+  },
+  styles: {
+    // Je récupére mes CSS depuis node_modules
+    "normalize.css": ["normalize.css "],
+    "font-awesome": ["css/font-awesome.css"]
+  }
 };
 
 exports.watcher = {
-    usePolling: true,
-    awaitWriteFinish: true
+  usePolling: true,
+  awaitWriteFinish: true
 };
