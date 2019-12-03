@@ -1,10 +1,11 @@
 .header {
+    width: 100%;
+    min-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $background-color;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
+    background: $background-color;
+    border: 1px solid rgba(212, 175, 55, .5);
+    font-family: $font-serif;
+    z-index: 10;
 }

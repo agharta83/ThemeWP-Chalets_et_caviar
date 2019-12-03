@@ -1,13 +1,25 @@
-.logo {
-    width: 300px;
-    height: 80px;
-    padding: 0 0.8em;
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 2.5em;
 
-    &__img {
-        width: 50%; 
+    & a {
+        font: {
+            family: $font-logo;
+            size: 2em;
+        }
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $nd-text-color;
+        }
     }
 
-    &__baseline {
-        font-size: 0.8em;
+    &-baseline {
+        font-size: 0.6em;
+        font-weight: bold;
+        color: $text-color;
     }
 }

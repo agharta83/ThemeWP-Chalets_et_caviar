@@ -4,183 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chalet et Caviar</title>
+    <title>Chalet et caviar</title>
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <div class="wrapper">
+  <div class="wrapper">   
 
-        <header class="header">
+    <section class="hero">
+      <div class="hero__bcg-opacity">
+        <div class="hero__title-wrapper">
+          <h1 class="hero__title">Chalets et caviar</h1>
+          <h3 class="hero__description">Agence immobilière de luxe à Courchevel</h3>
+        </div>
+        <div class="hero__slider-wrapper">
+          <div class="hero__slide slide1">
+            <p>Devenez propriétaire dans les Alpes</p>
+          </div>
+          <div class="hero__slide slide2">
+             <p>Trouvez un chalet en location pour vos vacances</p>
+          </div>
+          <div class="hero__slide slide3">
+             <p>Découvrez le style de vie alpin, nous vous accompagnons dans votre projet</p>
+          </div>
+        </div>         
+        <div class="hero__arrow-wrapper">
+          <a href="#"><i class="hero__arrow fa fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
 
-            <div class="logo">
-                <a href="#">
-                    <img  class="logo__img" src="images/chalets_et_caviar_logo.png" alt="logo-chalets-et-caviar">
-                </a>
-                <div class="logo__baseline">Agence immobilière à Courchevel</div>
-            </div>
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">Chalets et caviar</a>
+      <div class="header__logo-baseline">Agence immobilière à Courchevel</div>
+      </div>
+      <nav class="main-nav">
+        <a href="#" class="main-nav__link">Accueil</a>
+        <a href="#" class="main-nav__link">Ventes</a>
+        <a href="#" class="main-nav__link">Locations</a>
+        <a href="#" class="main-nav__link">Contact</a>
+      </nav>
+    </header>
 
-            <nav class="main-nav">
-                <a href="#" class="main-nav__link">Ventes</a>
-                <a href="#" class="main-nav__link">Locations</a>
-                <a href="#" class="main-nav__link">Contact</a>
-            </nav>
+    <main class="main">
 
-        </header>
+      <section id ="ventes" class="section">
+        <h3 class="section__title">nos ventes <span>à la Une</span></h3> 
+        
+        <article class="article">
 
-        <section class="hero">
-
-            <div class="hero__title hero__title-st">Chalets</div>
-            <div class="hero__title hero__title-nd">
-                <span>et Caviar</span>
+          <div class="article__image-wrap reveal1">
+              <span class="article-icone-love"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
+            <img class="article__image" src="/images/ventes/Chalet_6.jpeg" alt="Chalet_6">
+          </div>
+          
+          <div class="article__text">
+            <h3 class="article__headline">
+              <span>Le romantique</span>
+              <span class="article__headline-surface">56 m²</span>
+              <div class="article__bar"></div>
+            </h3>
+            <div class="article-reverse__content">
+              <div class="article-icone-container">
+                  <p class="article-excerpt">Grand chalet situé au coeur de la forêt.</p>
+                  <p class="row">3<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-bed" aria-hidden="true"></i></span></i></p>
+                  <p class="row">2<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-bath" aria-hidden="true"></i></span></p>
+                  <p class="row">Grande pièce à vivre<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></p>
+                  <p class="row">350 000<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-eur" aria-hidden="true"></i></span></p>
+              </div>
+                
+                <div class="article__link">
+                    <a href="#" class="article__read-link" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                </div>
             </div>
             
-            <h3 class="hero__description">Agence immobilière de luxe à Courchevel</h3>
-            <span class="hero__stroke"></span>
-            <p class="hero__word"></p>
+          </div>
 
-        </section>
+        </article>
 
-        <main class="main">
+        <article class="article-reverse">
 
-            <section id ="ventes" class="ventes-chalets">
+            <div class="article-reverse__image-wrap reveal1">
+                <span class="article-icone-love-reverse"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
+              <img class="article-reverse__image" src="/images/ventes/Chalet_7.jpeg" alt="Chalet_7">
+              
+            </div>
+            
+            <div class="article-reverse__text">
+              <h3 class="article-reverse__headline">
+                <span>Le traditionnel</span>
+                <span class="article__headline-surface">89 m²</span>
+                <div class="article-reverse__bar"></div>
+              </h3>
+              <div class="article-reverse__content">
+                <div class="article-icone-container">
+                    <p class="article-excerpt">Très grand chalet</p>
+                    <p class="row"><span class="article-icone"><i class="fa fa-bed" aria-hidden="true"></i></span></i><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>6</p>
+                    <p class="row"><span class="article-icone"><i class="fa fa-bath" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>3</p>
+                    <p class="row"><span class="article-icone"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>Grandes baies vitrées.</p>
+                    <p class="row"><span class="article-icone"><i class="fa fa-eur" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>690 000</p>
+                </div>
+                  
+              </div>
+              <div class="article__link">
+                  <a href="#" class="article__read-link" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+              </div>
+              
+            </div>
+  
+          </article>
+      </section>
 
-                <h3 class="ventes-chalets__title">Chalets en ventes</h3>
+      <section id ="locations" class="section">
+          <h3 class="section__title">nos locations <span>à la Une</span></h3> 
+        
+          <article class="article">
+  
+            <div class="article__image-wrap reveal2">
+                <span class="article-icone-love"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
+              <img class="article__image" src="/images/locations/Chalet_1.jpeg" alt="Chalet_6">
+            </div>
+            
+            <div class="article__text">
+              <h3 class="article__headline">
+                <span>Le familial</span>
+                <span class="article__headline-surface">6 à 12 places</span>
+                <div class="article__bar"></div>
+              </h3>
+              <div class="article-reverse__content">
+                <div class="article-icone-container">
+                    <p class="article-excerpt">Grand chalet, idéal pour les week-ends en famille.</p>
+                    <p class="row">6<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-bed" aria-hidden="true"></i></span></i></p>
+                    <p class="row">3<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-bath" aria-hidden="true"></i></span></p>
+                    <p class="row">1530 / semaine<i class="fa fa-caret-left article-arrow" aria-hidden="true"></i><span class="article-icone"><i class="fa fa-eur" aria-hidden="true"></i></span></p>
+                </div>
+                  
+              </div>
+              <div class="article__link">
+                  <a href="#" class="article__read-link" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+              </div>
+            </div>
+  
+          </article>
+  
+          <article class="article-reverse">
+  
+              <div class="article-reverse__image-wrap reveal2">
+                  <span class="article-icone-love-reverse"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
+                <img class="article-reverse__image" src="/images/locations/Chalet_2.jpeg" alt="Chalet_6">
                 
-                <article class="vente-chalet">
-                    <img class="vente-chalet__img" src="/images/ventes/Chalet_6.jpeg" alt="Chalet_6">
-                    <div class="vente-chalet__content">
-                        <h2 class="vente__content__title">Chalet 6 - Le romantique - 56 m²</h2>
-                        <div class="vente__content__excerpt">
-                            <p>Grand chalet situé au coeur de la forêt.</p>
-                            <p>3 chambres</p>
-                            <p>2 salles de bain</p>
-                            <p>Grande pièce à vivre</p>
-                            <p>Prix: 350 000 €</p>
-                        </div>
-                        <a href="#" class="vente__content__read-link">En savoir plus</a>
-                    </div>
-                </article>
-
-                <article class="vente-chalet">
-                    <img class="vente-chalet__img" src="/images/ventes/Chalet_7.jpeg" alt="Chalet_7">
-                    <div class="vente-chalet__content">
-                        <h2 class="vente__content__title">Chalet 7 - Le traditionnel - 89 m²</h2>
-                        <div class="vente__content__excerpt">
-                            <p>Très grand chalet.</p>
-                            <p>6 chambres</p>
-                            <p>3 salles de bain</p>
-                            <p>Grandes baies vitrées</p>
-                            <p>Prix: 690 000 €</p>
-                        </div>
-                        <a href="#" class="vente__content__read-link">En savoir plus</a>
-                    </div>
-                </article>
-
-            </section>
-
-            <section id ="locations" class="locations-chalets">
-
-                <h3 class="ventes-chalets__title">Chalets en locations</h3>
-
-                <article class="location-chalet">
-                    <img class="location-chalet__img" src="/images/locations/Chalet_1.jpeg" alt="Chalet_1">
-                    <div class="location-chalet__content">
-                        <h2 class="location__content__title">Chalet 1 - Le familial - 6 à 12 places</h2>
-                        <div class="location__content__excerpt">
-                            <p>Grand chalet, idéal pour les week-ends en famille.</p>
-                            <p>6 chambres</p>
-                            <p>3 salles de bain</p>
-                            <p>Prix à la semaine: 1 530 €</p>
-                        </div>
-                        <a href="#" class="location__content__read-link">En savoir plus</a>
-                    </div>
-                </article>
-
-                <article class="location-chalet">
-                    <img class="location-chalet__img" src="/images/locations/Chalet_2.jpeg" alt="Chalet_2">
-                    <div class="location-chalet__content">
-                        <h2 class="location__content__title">Chalet 2 - Le cosy - 3 à 6 places</h2>
-                        <div class="location__content__excerpt">
-                            <p>Petit chalet avec grande baie vitrée et une cheminée.</p>
-                            <p>Idéal pour les vacances entre amis.</p>
-                            <p>3 chambres</p>
-                            <p>2 salles de bain</p>
-                            <p>Prix de la semaine: 1250 €</p>
-                        </div>
-                        <a href="#" class="location__content__read-link">En savoir plus</a>
-                    </div>
-                </article>
-
-            </section>
-
-            <section id="contact" class="contact">
-
-                <div class="contact-form">
-
-                    <form action="">
-
-                        <div class="field">
-                            <label for="name">Nom</label>
-                            <input id="name" type="text">
-                        </div>
-                          
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input id="email" type="text">
-                        </div>
-                          
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea id="message" type="text"></textarea>
-                        </div>
-                          
-                        <div class="field">
-                            <button type="submit">Envoyer</button>
-                        </div>
-
-                    </form>
-
+              </div>
+              
+              <div class="article-reverse__text">
+                <h3 class="article-reverse__headline">
+                  <span>Le cosy</span>
+                  <span class="article__headline-surface">3 à 6 places</span>
+                  <div class="article-reverse__bar"></div>
+                </h3>
+                <div class="article-reverse__content">
+                  <div class="icone-article-container">
+                      <p class="article-excerpt">Petit chalet avec grande baie vitrée et une cheminée.</p>
+                      <p class="row"><span class="article-icone "><i class="fa fa-thumbs-up" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>Idéal pour les vacances entre amis.</p>
+                      <p class="row"><span class="article-icone"><i class="fa fa-bed" aria-hidden="true"></i></span></i><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>3</p>
+                      <p class="row"><span class="article-icone"><i class="fa fa-bath" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>2 </p>
+                      <p class="row"><span class="article-icone"><i class="fa fa-eur" aria-hidden="true"></i></span><i class="fa fa-caret-right article-arrow" aria-hidden="true"></i>1250 / semaine</p>
+                  </div>
+                    
                 </div>
-
-                <div class="contact-info" id="contact-info">
-
-                    <div class="contact-info__item">
-                        <i class="contact-info__item__icon fa fa-envelope"></i>
-                        <h5 class="contact-info__item__title">E-mail</h5>
-                        <a class="contact-info__item__info" href="mailto:audrey@oclock.io"><p>chalets-et-caviar@opc.com</p></a>
-                    </div>
-                  
-                    <div class="contact-info__item">
-                        <i class="contact-info__item__icon fa fa-phone"></i>
-                        <h5 class="contact-info__item__title">T&eacute;l&eacute;phone</h5>
-                        <a class="contact-info__item__info" href="tel:+33604020810"><p>+33 6 03 02 01 00</p></a>
-                    </div>
-                  
-                    <div class="contact-info__item">
-                        <i class="contact-info__item__icon fa fa-home"></i>
-                        <h5 class="contact-info__item__title">Adresse</h5>
-                        <div class="contact-info__item__info">
-                            <p>2 Rue du Rocher</p>
-                            <p>73120 Saint-Bon-Tarentaise</p>
-                        </div>
-                        
-                    </div>
-                  
+                <div class="article__link">
+                    <a href="#" class="article__read-link" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
                 </div>
+                
+              </div>
+    
+            </article>
 
-            </section>
+      </section>
 
-        </main>
+      <section id="contact" class="section">
+          <h3 class="section__title">contactez <span>Nous</span></h3>
+        <div class="contact">
+            
+            <div class="contact-form">
+                <form action="">
+                  <div class="field">
+                    <label for="name">Nom</label>
+                    <input id="name" type="text">
+                  </div>            
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="text">
+                  </div>        
+                  <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" type="text"></textarea>
+                  </div>                   
+                  <div class="field">
+                    <button type="submit">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+      
+              <div class="contact-info" id="contact-info">
+                <div class="contact-info__item">
+                  <i class="contact-info__item__icon fa fa-envelope"></i>
+                  <h5 class="contact-info__item__title">E-mail</h5>
+                  <a class="contact-info__item__info" href="mailto:audrey@oclock.io"><p>chalets-et-caviar@opc.com</p></a>
+                </div>     
+                <div class="contact-info__item">
+                  <i class="contact-info__item__icon fa fa-phone"></i>
+                  <h5 class="contact-info__item__title">T&eacute;l&eacute;phone</h5>
+                  <a class="contact-info__item__info" href="tel:+33604020810"><p>+33 6 03 02 01 00</p></a>
+                </div>          
+                <div class="contact-info__item">
+                  <i class="contact-info__item__icon fa fa-home"></i>
+                  <h5 class="contact-info__item__title">Adresse</h5>
+                  <div class="contact-info__item__info">
+                    <p>2 Rue du Rocher</p>
+                    <p>73120 Saint-Bon-Tarentaise</p>
+                  </div>         
+                </div>   
+              </div>
+        </div>
 
-        <footer class="footer">
-            <h4 class="copyright__title">Chalets et Caviar</h4>
-            <p class="copyright__text">copyright 2019 - The demo site for Openclassrooms students</p>
-        </footer>
-    </div>
+        
 
-    <script type="text/javascript" src="/js/vendor.js"></script>
-    <script src="/js/app.js"></script>
-    <script>require('initialize');</script>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <h4 class="copyright__title">Chalets et Caviar</h4>
+      <p class="copyright__text">copyright 2019 - The demo site for Openclassrooms students</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js
+  "></script>
+  <script type="text/javascript" src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+  <script>require('initialize');</script>
 </body>
 </html>

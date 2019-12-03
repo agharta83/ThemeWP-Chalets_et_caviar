@@ -1,97 +1,110 @@
 .hero {
+    min-width: 100%;
+    min-height: 90vh;
     text-align: center;
+    color: $text-color;
+    background : {
+        image: url('/images/hero/hero-courchevel-2.jpg');
+        size: cover;
+        origin: border-box;
+        repeat: no-repeat;
+    }
+
+    &__bcg-opacity {
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background: $nd-color;
+    }
 
     &__title {
         text-align: center;
-        margin: 0.5em auto 0 auto;
-        font-size: 7em;
-        color: $nd-text-color;
-        font-family: $font-title;
-
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-
-        &-st {
-            animation: showup 7s 1;
-            animation-fill-mode: forwards;
-        }
-
-        &-nd {
-            width: 0px;
-            animation: reveal 7s 1;
-            animation-fill-mode: forwards;
-        }
-
-        &-nd span {
-            margin-left: -350px;
-            animation: slidein 7s 1;
-            animation-fill-mode: forwards;
-        }
-    }
-
-    &__stroke {
-        margin: 0 auto;
-        width: 13em;
-        display: block;
-
-        &::before {
-            content: '';
-            background: $nd-color;
-            display: block;
-            margin-bottom: .3rem;
-            width: 100%;
-            height: .25rem;
-        }
-
-        &::after {
-            content: '';
-            background: $nd-color;
-            height: 1px;
-            display: block;
-            margin-bottom: 0.5em;
-            width: 100%;
-
-        }
+        font-family: $font-logo;
+        font-size: 10em;
+        margin: 0;
+        /* Linear gradient sur le texte */
+        background: $title-color;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
 
     &__description {
         text-transform: uppercase;
-        font-family: $nd-font;
-        color: $nd-text-color;
+        font: {
+            family: $font-serif;
+            size: 2.5rem;
+        }
+        color: $text-color;
+        background: $nd-color;
+        width: 100vw;
+        margin-top: 0;
+        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
-    &__word {
+    &__arrow-wrapper {
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &__arrow {
+        font-size: 1.5em;
+        border: 2px solid $text-color;
+        border-radius: 50%;
+        padding: 0.5em;
         margin: 1em;
-        height: 15px;
-        color: $nd-text-color;
-        font-size: 1.7em;
-        font-weight: bold;
-        font-family: 'Poppins', $fallback-font-stack;
-        @include text-shadow(2px,2px,2px,rgba(0,0,0,.25));
-        padding: 1.5em;
-        text-transform: uppercase;
+        color: lighten($text-color, 25);
+        transition: 0.2s ease-in-out;
+        animation: jittery 4s infinite;
+
+        &:hover {
+            animation: heartbeat 0.2s infinite;
+        }
     }
 }
 
-@keyframes showup {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 1; }
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
-@keyframes slidein {
-    0% { margin-left:-350px; }
-    20% { margin-left:-350px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+@keyframes jittery {
+    5%,
+    50% { transform: scale(1); }
+    10% { transform: scale(0.9); }
+    15% { transform: scale(1.15); }
+    20% { transform: scale(1.15) rotate(-5deg); }
+	25% { transform: scale(1.15) rotate(5deg); }
+	30% { transform: scale(1.15) rotate(-3deg); }
+	35% { transform: scale(1.15) rotate(2deg); }
+	40% { transform: scale(1.15) rotate(0); }
 }
 
-@keyframes reveal {
-    0% {opacity:0; width:0px;}
-    20% {opacity:1; width:0px;}
-    30% {width:350px;}
-    80% {opacity:1;}
-    100% {opacity:1; width:350px;}
+@keyframes heartbeat {
+	50% { transform: scale(1.1); }
 }
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  

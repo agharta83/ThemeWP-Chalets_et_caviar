@@ -1,52 +1,75 @@
-const anime = require('animejs');
+require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js');
+var gsap = require("gsap/dist/gsap").gsap;
+var ScrollMagic = require('scrollmagic');
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Animation hero
-  var
-    words = ['Ventes de chalets d\'exceptions','Location de rêves dans un chalet','Venez visiter la station "Les 3 Vallées" et sa vallée de la Tarentaise'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 5,
-    speed = 100;
 
-  var wordflick = function(){
-    setInterval(function(){
-      if (forwards) {
-        if(offset >= words[i].length){
-          ++skip_count;
-          if (skip_count == skip_delay) {
-            forwards = false;
-            skip_count = 0;
-          }
-        }
+
+var app = {
+  init: function() {
+    app.InitScrollMagic();
+  },
+
+  // Scroll Animation
+  InitScrollMagic: function() {
+    // Init ScrollMagic
+    var ctrl = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 'onLeave'
       }
-      else {
-         if(offset == 0){
-            forwards = true;
-            i++;
-            offset = 0;
-            if(i >= len){
-              i=0;
-            } 
-         }
-      }
-      part = words[i].substr(0, offset);
-      if (skip_count == 0) {
-        if (forwards) {
-          offset++;
-        }
-        else {
-          offset--;
-        }
-      }
-    	$('.hero__word').text(part);
-  },speed);
+    });
+
+    // Create scene section pins
+    $("section").each(function() {
+      new ScrollMagic.Scene({
+        triggerElement: this
+      })
+      .setPin(this)
+      .addTo(ctrl);
+    });
+
+    // Sticky navbar
+    new ScrollMagic.Scene({
+      triggerElement: 'header',
+    })
+    .setPin('header', {pushFollowers: false})
+    .addTo(ctrl);
+
+    // Images Reveal on scroll
+    new ScrollMagic.Scene({
+      triggerElement: '#ventes',
+      triggerHook: 1,
+      duration: "80%",
+
+    })
+    .setClassToggle('.reveal1', 'visible')
+    .addTo(ctrl);
+
+    new ScrollMagic.Scene({
+      triggerElement: '#locations',
+      triggerHook: 1,
+      duration: "80%",
+    })
+    .setClassToggle('.reveal2', 'visible')
+    .addTo(ctrl);
+  }
+
 };
 
-  console.log('Initialized app');
-  wordflick();
-});
+$(app.init);
+
+  // Scroll Navbar
+  /*scrollHeader: function() {
+    $(window).scroll(function(){
+      $('.header').toggleClass('scrolled', $(this).scrollTop() > 10);
+    });
+    
+    // Reveal on Scroll
+    new ScrollMagic.Scene({
+      triggerElement: '#ventes',
+      triggerHook: 0.9,
+      duration: "80%",
+      offset: 50
+    })
+    .setClassToggle('#reveal1', 'visible')
+    .addTo(ctrl);
+  },*/

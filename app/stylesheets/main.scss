@@ -1,13 +1,13 @@
 @charset 'UTF-8';
 
 @import
-    'abstracts/variables',
-    'abstracts/mixins';
-
-@import
     'base/fonts',
     'base/base';
 
+@import
+    'abstracts/variables',
+    'abstracts/mixins';
+    
 @import
     'layout/header',
     'layout/main',
@@ -19,8 +19,8 @@
     'components/logo',
     'components/main-nav',
     'components/title-hero',
-    'components/vente-chalet',
-    'components/location-chalet',
+    'components/slider',
+    'components/article',
     'components/contact-form',
     'components/field',
     'components/contact-info';

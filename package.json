@@ -12,8 +12,10 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "font-awesome": "^4.7.0",
+    "gsap": "^3.0.1",
     "jquery": "^3.4.1",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",

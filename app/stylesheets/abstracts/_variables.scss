@@ -1,9 +1,13 @@
-$background-color: #fff;
-$text-color: #000004;
-$nd-color: #C4151C;
-$nd-text-color: #fff;
+$background-color: #004C74;
+$background-color-opacity: rgba(0, 76, 116, .8);
+$title-color: linear-gradient(to right, #797066, #857a6e, #918477, #9e8f7f, #ab9988, #b7a28e, #c2aa94, #ceb39a, #dabc9f, #e7c6a4, #f3cfa8, #ffd9ad);
+$text-color: #EEFCFF;
+$nd-text-color: #D4AF37;
+$nd-color: rgba(212, 175, 55, .2);
+$background-linear-gradient: linear-gradient(to bottom right, #004D74, #0783C4);
 
-$fallback-font-stack: "Helvetica, Arial, sans-serif";
-$font-title: 'Dr Sugiyama', cursive;
-$nd-font: 'Jomolhari', serif;
+
+$font-serif: 'Cinzel', serif;
+$font-logo: 'Dr Sugiyama', cursive;
+$nd-font: 'Sulphur Point', sans-serif;
 

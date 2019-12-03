@@ -1,37 +1,66 @@
 .main {
-    margin: 6em auto;
-    width: 85vw;
+    width: 100%;
 
-    .ventes-chalets {
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background: $title-color;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 1em;
-        background: $background-color;
 
         &__title {
+            margin-top: 3.5em;
             flex-basis: 100%;
-            margin: 0.5em 2em;
-            text-transform: uppercase;
+            text-align:center;
+            justify-content: center;
+            align-self: center;
+            font: {
+                family: $font-serif;
+                size: 2em;
+                weight: bold;
+            }
+            color: $text-color;
+
+            & span {
+                color: $background-color-opacity;
+                font : {
+                    size: 0.7em;
+                    weight: bold;
+                }
+            }
         }
 
     }
 
-    .locations-chalets {
+    .locations {
+        width: 100%;
+        min-height: 100vh;
+        background: $title-color;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 4em 0;
-        background: $background-color;
+        justify-content: center;
 
         &__title {
+            margin-top: 3.5em;
             flex-basis: 100%;
-            margin: 0.5em 2em;
-            text-transform: uppercase;
+            text-align:center;
+            font: {
+                family: $font-serif;
+                size: 2em;
+                weight: bold;
+            }
+            color: $text-color;
+
+            & span {
+                color: $background-color-opacity;
+                font : {
+                    size: 0.7em;
+                    weight: bold;
+                }
+            }
         }
 
     }
-
-
-
 }
