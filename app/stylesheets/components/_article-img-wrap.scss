@@ -11,8 +11,14 @@
         border-radius: 5px;
 
         &--reverse {
+            align-self: flex-end;
             margin-left: 2em;
             margin-right: 8em;
+            width: 50%;
+            height: 65%;
+            background-color: $primaryColor;
+            position: relative;
+            border-radius: 5px;
         }
     }
 
@@ -22,12 +28,15 @@
         position: relative;
         top: -8px;
         right: -8px;
-        border: 1px solid $lightSilver;
         border-radius: 5px;
 
         &--reverse {
+            width: 100%;
+            height: 100%;
+            position: relative;
             top: -8px;
             left: -8px;
+            border-radius: 5px;
         }
 
         &__icone {
@@ -41,13 +50,21 @@
             color: lighten($gold, 35);
 
             &--reverse {
+                position: absolute;
+                z-index: 5;
+                top: 0;
                 left: 0.2em;
+                font: {
+                    size: 3em;
+                }
+                color: lighten($gold, 35);
             }
         }
     }
 }
 
 /** Reveal on scroll */
+/*
 .reveal1 {
     opacity: 0;
 	-webkit-transform: scale(0.9);
@@ -93,6 +110,6 @@
 	-o-transform: none;
 	transform: none;
 }
-
+*/
 
     

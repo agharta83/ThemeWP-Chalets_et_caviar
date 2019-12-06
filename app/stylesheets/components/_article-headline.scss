@@ -6,10 +6,20 @@
             weight: bold;
         }
         color: $lightSilver;
-        padding-bottom: 1em;
+        padding: 0;
+        display: inline-block;
+        position: relative;
 
         &--reverse {
-            text-align: left;
+            font: {
+                size: 1.5em;
+                family: $font-serif;
+                weight: bold;
+            }
+            color: $lightSilver;
+            padding: 0;
+            display: inline-block;
+            position: relative;
         }
 
         &__surface {
@@ -23,6 +33,26 @@
             padding: 0 0.4em;
             background: lighten($gold, 35);
             border-radius: 4px;
+        }
+
+        &__bar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 100%;
+            background-color: $primaryColor;
+            z-index: -1;
+            
+            &--reverse {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 100%;
+                background-color: $primaryColor;
+                z-index: -1;
+            }
         }
     }
 }

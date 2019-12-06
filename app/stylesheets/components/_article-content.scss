@@ -4,6 +4,8 @@
         text-align: right;
 
         &--reverse {
+            padding-right: 2em;
+            text-align: right;
             padding-right: 0;
             padding-left: 2em;
         }
@@ -15,6 +17,9 @@
         }
 
         &--reverse {
+            font: {
+                family: $font-sans-serif;
+            }
             text-align: left;
         }
 
