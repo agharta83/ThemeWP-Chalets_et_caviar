@@ -1,0 +1,12 @@
+.hero {
+    &__title {
+        text-align: center;
+        font-family: $font-cursive;
+        font-size: 10em;
+        margin: 0;
+        background: $goldGradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}

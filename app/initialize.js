@@ -56,20 +56,3 @@ var app = {
 };
 
 $(app.init);
-
-  // Scroll Navbar
-  /*scrollHeader: function() {
-    $(window).scroll(function(){
-      $('.header').toggleClass('scrolled', $(this).scrollTop() > 10);
-    });
-    
-    // Reveal on Scroll
-    new ScrollMagic.Scene({
-      triggerElement: '#ventes',
-      triggerHook: 0.9,
-      duration: "80%",
-      offset: 50
-    })
-    .setClassToggle('#reveal1', 'visible')
-    .addTo(ctrl);
-  },*/

@@ -6,7 +6,7 @@
     align-self: center;
 
     &__item {
-        border-bottom: 1px solid lighten($nd-text-color, 10);
+        border-bottom: 1px solid lighten($gold, 10);
         padding: 1em 0 1em 4em;
         display: flex;
 
@@ -15,7 +15,7 @@
         }
 
         &__title {
-            color: lighten($nd-text-color, 10);
+            color: lighten($gold, 10);
             flex-basis: 30%;
             align-self: center;
             font : {
@@ -24,7 +24,7 @@
         }
         
         &__icon {
-            color: lighten($nd-text-color, 10);
+            color: lighten($gold, 10);
             font-size: 1.3em;
             flex-basis: 30%;
             text-align: center;
@@ -33,13 +33,13 @@
 
         &__info {
             flex-basis: 100%;
-            color: $text-color;
-            font-family: $nd-font;
+            color: $lightSilver;
+            font-family: $font-sans-serif;
         }
 
         a {
             text-decoration: none;
-            color: $text-color;
+            color: $lightSilver;
         }
     }
 }

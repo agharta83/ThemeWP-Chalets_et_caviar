@@ -8,12 +8,12 @@
         font-size: 1em;
         text-transform: uppercase;
         font-weight: bold;
-        color: $text-color;
+        color: $lightSilver;
 
         &:hover {
-            color: $nd-text-color;
-            border-top: 1px solid $nd-text-color;
-            border-bottom: 1px solid $nd-text-color;
+            color: $gold;
+            border-top: 1px solid $gold;
+            border-bottom: 1px solid $gold;
             padding-top: 0.3em;
             padding-bottom: 0.3em;
             transition: .48s all ease-in-out;

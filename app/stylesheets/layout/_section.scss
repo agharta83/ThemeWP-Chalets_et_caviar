@@ -1,0 +1,30 @@
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background: $goldGradient;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__title {
+        margin-top: 3.5em;
+        flex-basis: 100%;
+        text-align:center;
+        justify-content: center;
+        align-self: center;
+        font: {
+            family: $font-serif;
+            size: 2em;
+            weight: bold;
+        }
+        color: $lightSilver;
+
+        & span {
+            color: $primaryColor-opacity;
+            font : {
+                size: 0.7em;
+                weight: bold;
+            }
+        }
+    }
+}

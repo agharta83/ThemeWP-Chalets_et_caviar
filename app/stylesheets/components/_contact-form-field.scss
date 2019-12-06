@@ -3,7 +3,7 @@
     padding: 1em;
 
     label {
-        color: $text-color;
+        color: $lightSilver;
         text-transform: uppercase;
         display: block;
         padding: 0.7em 0;
@@ -18,12 +18,12 @@
         font: {
             size: 1em;
             weight: bold;
-            family: $nd-font;
+            family: $font-sans-serif;
         }
-        color: $background-color;
+        color: $primaryColor;
         width: 100%;
         border: none;
-        background-color: lighten($nd-text-color, 35);
+        background-color: lighten($gold, 35);
     }
 
     textarea {
@@ -31,8 +31,8 @@
     }
 
     button[type=submit] {
-        background-color: lighten($nd-text-color, 35);
-        color: $background-color;
+        background-color: lighten($gold, 35);
+        color: $primaryColor;
         padding: 0.8em;
         font: {
             size: 0.8em;
@@ -48,8 +48,8 @@
         
 
         &:hover {
-            background-color: lighten($background-color, 5);
-            color: $nd-text-color;
+            background-color: lighten($primaryColor, 5);
+            color: $gold;
         }
     }
 }

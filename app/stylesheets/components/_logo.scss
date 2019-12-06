@@ -6,20 +6,20 @@
 
     & a {
         font: {
-            family: $font-logo;
+            family: $font-cursive;
             size: 2em;
         }
-        color: $text-color;
+        color: $lightSilver;
         text-decoration: none;
 
         &:hover {
-            color: $nd-text-color;
+            color: $gold;
         }
     }
 
     &-baseline {
         font-size: 0.6em;
         font-weight: bold;
-        color: $text-color;
+        color: $lightSilver;
     }
 }

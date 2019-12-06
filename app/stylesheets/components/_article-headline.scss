@@ -1,0 +1,28 @@
+.article {
+    &__headline {
+        font: {
+            size: 1.5em;
+            family: $font-serif;
+            weight: bold;
+        }
+        color: $lightSilver;
+        padding-bottom: 1em;
+
+        &--reverse {
+            text-align: left;
+        }
+
+        &__surface {
+            text-align: center;
+            color: $primaryColor-opacity;
+            font : {
+                size: 0.6em;
+                weight: bold;
+            }
+            margin-left: 1em;
+            padding: 0 0.4em;
+            background: lighten($gold, 35);
+            border-radius: 4px;
+        }
+    }
+}

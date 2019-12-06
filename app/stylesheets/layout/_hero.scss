@@ -2,7 +2,7 @@
     min-width: 100%;
     min-height: 90vh;
     text-align: center;
-    color: $text-color;
+    color: $lightSilver;
     background : {
         image: url('/images/hero/hero-courchevel-2.jpg');
         size: cover;
@@ -17,94 +17,6 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        background: $nd-color;
-    }
-
-    &__title {
-        text-align: center;
-        font-family: $font-logo;
-        font-size: 10em;
-        margin: 0;
-        /* Linear gradient sur le texte */
-        background: $title-color;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-
-    &__description {
-        text-transform: uppercase;
-        font: {
-            family: $font-serif;
-            size: 2.5rem;
-        }
-        color: $text-color;
-        background: $nd-color;
-        width: 100vw;
-        margin-top: 0;
-        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-
-    &__arrow-wrapper {
-        & a {
-            text-decoration: none;
-        }
-    }
-
-    &__arrow {
-        font-size: 1.5em;
-        border: 2px solid $text-color;
-        border-radius: 50%;
-        padding: 0.5em;
-        margin: 1em;
-        color: lighten($text-color, 25);
-        transition: 0.2s ease-in-out;
-        animation: jittery 4s infinite;
-
-        &:hover {
-            animation: heartbeat 0.2s infinite;
-        }
-    }
-}
-
-@keyframes focus-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        filter: blur(12px);
-        opacity: 0;
-    }
-    100% {
-        filter: blur(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes jittery {
-    5%,
-    50% { transform: scale(1); }
-    10% { transform: scale(0.9); }
-    15% { transform: scale(1.15); }
-    20% { transform: scale(1.15) rotate(-5deg); }
-	25% { transform: scale(1.15) rotate(5deg); }
-	30% { transform: scale(1.15) rotate(-3deg); }
-	35% { transform: scale(1.15) rotate(2deg); }
-	40% { transform: scale(1.15) rotate(0); }
-}
-
-@keyframes heartbeat {
-	50% { transform: scale(1.1); }
-}
-
-@keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-  
+        background: $brown;
+    }  
+}  

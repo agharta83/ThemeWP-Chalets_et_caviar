@@ -7,23 +7,30 @@
 @import
     'abstracts/variables',
     'abstracts/mixins';
-    
-@import
-    'layout/header',
-    'layout/main',
-    'layout/hero',
-    'layout/contact',
-    'layout/footer';
 
 @import
     'components/logo',
     'components/main-nav',
-    'components/title-hero',
-    'components/slider',
-    'components/article',
+    'components/hero-title',
+    'components/hero-description',
+    'components/hero-arrow',
+    'components/hero-slider',
+    'components/article-img-wrap',
+    'components/article-headline',
+    'components/article-content',
     'components/contact-form',
-    'components/field',
+    'components/contact-form-field',
     'components/contact-info';
+
+@import
+    'layout/header',
+    'layout/hero',
+    'layout/main',
+    'layout/section',
+    'layout/article',
+
+    'layout/contact',
+    'layout/footer';
 
 @import
     'pages/home';
