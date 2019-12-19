@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chalet et caviar</title>
-    <link rel="stylesheet" href="/css/vendor.css">
-    <link rel="stylesheet" href="/css/app.css">
-</head>
-<body>
-  <div class="wrapper">   
-
-    <section class="hero">
-      <div class="hero__bcg-opacity">
-        <div class="hero__title-wrapper">
-          <h1 class="hero__title">Chalets et caviar</h1>
-          <h3 class="hero__description">Agence immobilière de luxe à Courchevel</h3>
-        </div>
-        <div class="hero__slider-wrapper">
-          <div class="hero__slide slide1">
-            <p>Devenez propriétaire dans les Alpes</p>
-          </div>
-          <div class="hero__slide slide2">
-             <p>Trouvez un chalet en location pour vos vacances</p>
-          </div>
-          <div class="hero__slide slide3">
-             <p>Découvrez le style de vie alpin, nous vous accompagnons dans votre projet</p>
-          </div>
-        </div>         
-        <div class="hero__arrow-wrapper">
-          <a href="#"><i class="hero__arrow fa fa-arrow-down" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <header class="header">
-      <div class="header__logo">
-        <a href="#">Chalets et caviar</a>
-      <div class="header__logo-baseline">Agence immobilière à Courchevel</div>
-      </div>
-      <nav class="main-nav">
-        <a href="#" class="main-nav__link">Accueil</a>
-        <a href="#" class="main-nav__link">Ventes</a>
-        <a href="#" class="main-nav__link">Locations</a>
-        <a href="#" class="main-nav__link">Contact</a>
-      </nav>
-    </header>
+<?php
+get_header();
+?>
 
     <main class="main">
 
@@ -57,7 +12,7 @@
 
             <div class="article__wrap__img reveal1">
               <span class="article__img__icone"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
-              <img class="article__img" src="/images/ventes/Chalet_6.jpeg" alt="Chalet_6">
+              <img class="article__img" src="<?php get_template_directory_uri() . "/images/ventes/Chalet_6.jpeg" ?> alt="Chalet_6">
             </div>
 
           
@@ -236,15 +191,5 @@
 
     </main>
 
-    <footer class="footer">
-      <h4 class="copyright__title">Chalets et Caviar</h4>
-      <p class="copyright__text">copyright 2019 - The demo site for Openclassrooms students</p>
-    </footer>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script type="text/javascript" src="/js/vendor.js"></script>
-  <script src="/js/app.js"></script>
-  <script>require('initialize');</script>
-</body>
-</html>
+<?php
+get_footer();

@@ -2,7 +2,6 @@
     width: 49%;
     height: 60vh;
     display: flex;
-    border-right: 2px solid $primaryColor;
     padding-bottom: 7em;
 
     &--reverse {
@@ -13,3 +12,27 @@
     }
 }
 
+.text-reveal1Left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.6s ease-out;
+}
+.text-reveal1Left.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.text-reveal1Right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.6s ease-out;
+}
+.text-reveal1Right.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.article.border-visible {
+    border-right: 2px solid $primaryColor;
+    transition: all 0.6s ease-out;
+}

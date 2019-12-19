@@ -28,3 +28,18 @@
         }
     }
 }
+
+/* Reveal on scroll */
+.revealSectionTitle {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.6s ease-out;
+}
+.revealSectionTitle.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.section.visible {
+    opacity: 1;
+}
