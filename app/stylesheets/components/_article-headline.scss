@@ -5,6 +5,8 @@
             family: $font-serif;
             weight: bold;
         }
+        width: 100%;
+        text-align: center;
         color: $lightSilver;
         padding: 0;
         display: inline-block;
@@ -16,6 +18,8 @@
                 family: $font-serif;
                 weight: bold;
             }
+            width: 100%;
+            text-align: center;
             color: $lightSilver;
             padding: 0;
             display: inline-block;
@@ -23,35 +27,34 @@
         }
 
         &__surface {
+            display: block;
+            width: 3em;
+            height: 1.2em;
+            margin: 1em auto 0;
             text-align: center;
             color: $primaryColor-opacity;
             font : {
                 size: 0.6em;
                 weight: bold;
             }
-            margin-left: 1em;
-            padding: 0 0.4em;
+            padding: 0.2em 0.4em;
             background: lighten($gold, 35);
             border-radius: 4px;
-        }
 
-        &__bar {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 100%;
-            background-color: $primaryColor;
-            z-index: -1;
-            
-            &--reverse {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 100%;
-                background-color: $primaryColor;
-                z-index: -1;
+            &-loc {
+                display: block;
+                width: 8em;
+                height: 1.2em;
+                margin: 1em auto 0;
+                text-align: center;
+                color: $primaryColor-opacity;
+                font : {
+                    size: 0.6em;
+                    weight: bold;
+                }
+                padding: 0.2em 0.4em;
+                background: lighten($gold, 35);
+                border-radius: 4px;
             }
         }
     }

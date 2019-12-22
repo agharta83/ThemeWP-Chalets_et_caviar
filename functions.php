@@ -19,9 +19,7 @@ function mytheme_setup() {
 add_action ( 'wp_enqueue_scripts', 'mytheme_enqueue_styles', 0 );
 function mytheme_enqueue_styles() {
   $vendorStyle = 'mytheme-vendor-style';
-  // Dépendances
   wp_enqueue_style($vendorStyle, get_theme_file_uri() . '/public/css/vendor.css');
- // Nous voulons charger vendor.css avant app.css
   wp_enqueue_style('mytheme-style',get_theme_file_uri() . '/public/css/app.css', array( $vendorStyle ) );
 }
 

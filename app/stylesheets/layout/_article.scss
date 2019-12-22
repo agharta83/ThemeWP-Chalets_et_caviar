@@ -1,14 +1,20 @@
 .article {
-    width: 49%;
+    width: 48%;
     height: 60vh;
     display: flex;
     padding-bottom: 7em;
 
     &--reverse {
-        width: 50%;
         height: 60vh;
         display: flex;
         flex-direction: row-reverse;
+
+        &-loc {
+            height: 60vh;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 48%;
+        }
     }
 }
 
