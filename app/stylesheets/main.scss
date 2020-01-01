@@ -1,40 +1,35 @@
 @charset 'UTF-8';
 
-@import
-    'base/fonts',
-    'base/base';
+@import 'base/base',
+        'base/fonts';
 
-@import
-    'abstracts/variables',
-    'abstracts/mixins';
+@import 'abstracts/mixins',
+        'abstracts/variables';
 
-@import
-    'components/logo',
-    'components/main-nav',
-    'components/hero-title',
-    'components/hero-description',
-    'components/hero-arrow',
-    'components/hero-slider',
-    'components/article-img-wrap',
-    'components/article-headline',
-    'components/article-content',
-    'components/contact-form',
-    'components/contact-form-field',
-    'components/contact-info',
-    'components/single-hero-title';
+@import 'components/article-content',
+        'components/article-headline',
+        'components/article-img-wrap',
+        'components/contact-form-field',
+        'components/contact-form',
+        'components/hero-arrow',
+        'components/hero-description',
+        'components/hero-slider',
+        'components/hero-title',
+        'components/logo',
+        'components/main-nav',
+        'components/single-hero-content',
+        'components/single-hero-title',
+        'components/contact-info';
 
-@import
-    'layout/header',
-    'layout/hero',
-    'layout/main',
-    'layout/section',
-    'layout/article',
-    'layout/single_hero',
-    'layout/contact',
-    'layout/footer';
+@import 'layout/article',
+        'layout/contact',
+        'layout/header',
+        'layout/hero',
+        'layout/main',
+        'layout/section',
+        'layout/single_hero',
+        'layout/footer';
 
-@import
-    'pages/home';
+@import 'pages/single';
 
-@import
-    'shame';
+@import 'shame';

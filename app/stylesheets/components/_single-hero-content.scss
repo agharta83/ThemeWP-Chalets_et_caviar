@@ -1,0 +1,167 @@
+.single-hero__content {
+	box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+	padding: 2em 2em;
+	display: flex;
+	justify-content: space-between;
+	background: darken($brown, 40);
+	border: 5px solid $lightSilver;
+	font : {
+		family: $font-sans-serif;
+	}
+
+	&-left {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	&-right {
+		width: 50%;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	&__img {
+		width: 300px;
+		height: 175px;
+		margin: 0.5em;
+		border: 5px solid $primaryColor;
+	}
+}
+
+.single-hero__col-right {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: flex-end;
+	color: $lightSilver;
+
+	&__surface {
+		align-self: flex-end;
+		width: 3em;
+		height: 1.2em;
+		text-align: center;
+		color: $primaryColor-opacity;
+		font : {
+			size: 1.6em;
+			weight: bold;
+		}
+		padding: 0.2em 0.4em;
+		background: lighten($gold, 35);
+		border-radius: 4px;
+
+		&-loc {
+			display: block;
+			width: 8em;
+			height: 1.2em;
+			margin: 1em auto 0;
+			text-align: center;
+			color: $primaryColor-opacity;
+			font : {
+				size: 0.6em;
+				weight: bold;
+			}
+			padding: 0.2em 0.4em;
+			background: lighten($gold, 35);
+			border-radius: 4px;
+		}
+	}
+}
+
+.single-hero__col-left {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: $lightSilver;
+	font : {
+		size: 1.2em;
+		weight: bold;
+	}
+	margin-right: 0.5em;
+
+	& p:first-of-type {
+		margin: 0;
+	}
+}
+
+.items-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+.single {
+	&__item {
+		width: 40%;
+		border: 1px solid $lightSilver;
+		border-radius: 5%;
+		color: $lightSilver;
+		background-color: $primaryColor;
+		text-align: center;
+		padding: 0.5em 0.2em;
+		margin: 1em auto;
+		align-self: flex-end;
+
+		&-prix {
+			border: 1px solid $lightSilver;
+			border-radius: 5%;
+			color: $lightSilver;
+			background-color: $primaryColor;
+			text-align: end;
+			padding: 0.5em 0.2em;
+			margin: 0;
+			font : {
+				size: 1.3em;
+				weight: bold;
+			}
+
+			&-loc {
+				border: 1px solid $lightSilver;
+				border-radius: 5%;
+				color: $lightSilver;
+				background-color: $primaryColor;
+				text-align: end;
+				padding: 0.5em 0.2em;
+				margin: 0;
+				font : {
+					size: 1em;
+					weight: bold;
+				}
+			}
+
+			&-wrapper {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				align-self: flex-end;
+				justify-content: flex-end;
+			}
+		}
+
+		&-spec {
+			margin-bottom: 0;
+			border: 1px solid $lightSilver;
+			border-radius: 5%;
+			color: $lightSilver;
+			background-color: $primaryColor;
+			text-align: center;
+			font : {
+				size: 0.9em;
+			}
+		}
+	}
+
+	&__icone {
+		&-arrow {
+			padding: 0.2em;
+		}
+	}
+}

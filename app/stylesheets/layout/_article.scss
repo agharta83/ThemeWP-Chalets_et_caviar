@@ -1,44 +1,45 @@
 .article {
-    width: 48%;
-    height: 60vh;
-    display: flex;
-    padding-bottom: 7em;
+	width: 48%;
+	height: 60vh;
+	display: flex;
+	padding-bottom: 7em;
 
-    &--reverse {
-        height: 60vh;
-        display: flex;
-        flex-direction: row-reverse;
+	&--reverse {
+		width: 48%;
+		height: 60vh;
+		display: flex;
+		flex-direction: row-reverse;
 
-        &-loc {
-            height: 60vh;
-            display: flex;
-            flex-direction: row-reverse;
-            width: 48%;
-        }
-    }
+		&-loc {
+			height: 60vh;
+			display: flex;
+			flex-direction: row-reverse;
+			width: 48%;
+		}
+	}
 }
 
 .text-reveal1Left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: all 0.6s ease-out;
 }
 .text-reveal1Left.visible {
-    opacity: 1;
-    transform: none;
+	opacity: 1;
+	transform: none;
 }
 
 .text-reveal1Right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateX(40px);
+	transition: all 0.6s ease-out;
 }
 .text-reveal1Right.visible {
-    opacity: 1;
-    transform: none;
+	opacity: 1;
+	transform: none;
 }
 
 .article.border-visible {
-    border-right: 2px solid $primaryColor;
-    transition: all 0.6s ease-out;
+	border-right: 2px solid $primaryColor;
+	transition: all 0.6s ease-out;
 }

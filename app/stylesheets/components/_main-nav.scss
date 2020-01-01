@@ -1,22 +1,22 @@
 .main-nav {
-    padding: 1.5em 1em;
-    margin-right: 1.5em; 
+	padding: 1.5em 1em;
+	margin-right: 1.5em;
 
-    &__link {
-        text-decoration: none;
-        padding: 0 1em;
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $lightSilver;
+	&__link {
+		text-decoration: none;
+		padding: 0 1em;
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $lightSilver;
 
-        &:hover {
-            color: $gold;
-            border-top: 1px solid $gold;
-            border-bottom: 1px solid $gold;
-            padding-top: 0.3em;
-            padding-bottom: 0.3em;
-            transition: .48s all ease-in-out;
-        }
-    }
+		&:hover {
+			color: $gold;
+			border-top: 1px solid $gold;
+			border-bottom: 1px solid $gold;
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+			transition: .48s all ease-in-out;
+		}
+	}
 }

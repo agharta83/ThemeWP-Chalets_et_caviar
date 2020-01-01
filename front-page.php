@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-    
-<section id ="ventes" class="section">
-        <h3 class="section__title revealSectionTitle">nos ventes <span>à la Une</span></h3>
 
-        <!-- Traitement pour afficher le template des chalets "Ventes à la Une" en fonction de l'index de $posts -->
-        <?php
+<section id="ventes" class="section">
+    <h3 class="section__title revealSectionTitle">nos ventes <span>à la Une</span></h3>
+
+    <!-- Traitement pour afficher le template des chalets "Ventes à la Une" en fonction de l'index de $posts -->
+    <?php
             $posts = get_field('ventes_a_la_une');
             // On vérifie que $posts existe           
             if ($posts) {
@@ -28,13 +28,13 @@
             }     
         ?>
 
-      </section>
+</section>
 
-      <section id ="locations" class="section">
-          <h3 class="section__title revealSectionTitle">nos locations <span>à la Une</span></h3>
+<section id="locations" class="section">
+    <h3 class="section__title revealSectionTitle">nos locations <span>à la Une</span></h3>
 
-                 <!-- Traitement pour afficher le template des chalets "Location à la Une" en fonction de l'index de $posts -->
-        <?php
+    <!-- Traitement pour afficher le template des chalets "Location à la Une" en fonction de l'index de $posts -->
+    <?php
             $posts = get_field('locations_a_la_une');
             // On vérifie que $posts existe           
             if ($posts) {
@@ -58,8 +58,8 @@
             }     
         ?>
 
-      </section>
+</section>
 
-      <?php get_template_part( 'template-parts/content/page', 'contact' ); ?>
+<?php get_template_part( 'template-parts/content/page', 'contact' ); ?>
 
 <?php get_footer(); ?>

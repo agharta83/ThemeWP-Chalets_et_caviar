@@ -1,55 +1,56 @@
 .field {
-    width: 65%;
-    padding: 1em;
+	width: 65%;
+	padding: 1em;
 
-    label {
-        color: $lightSilver;
-        text-transform: uppercase;
-        display: block;
-        padding: 0.7em 0;
-        font: {
-            weight: 700;
-            family: $font-serif;
-        }
-    }
+	label {
+		color: $lightSilver;
+		text-transform: uppercase;
+		display: block;
+		padding: 0.7em 0;
+		font: {
+			weight: 700;
+			family: $font-serif;
+		}
+	}
 
-    input[type=text], input[type=email], textarea {
-        padding: 0.7em;
-        font: {
-            size: 1em;
-            weight: bold;
-            family: $font-sans-serif;
-        }
-        color: $primaryColor;
-        width: 100%;
-        border: none;
-        background-color: lighten($gold, 35);
-    }
+	input[type=text],
+	input[type=email],
+	textarea {
+		padding: 0.7em;
+		font: {
+			size: 1em;
+			weight: bold;
+			family: $font-sans-serif;
+		}
+		color: $primaryColor;
+		width: 100%;
+		border: none;
+		background-color: lighten($gold, 35);
+	}
 
-    textarea {
-        height: 10em;
-    }
+	textarea {
+		height: 10em;
+	}
 
-    button[type=submit] {
-        background-color: lighten($gold, 35);
-        color: $primaryColor;
-        padding: 0.8em;
-        font: {
-            size: 0.8em;
-            family: $font-serif;
-            weight: 800;
-        }
-        transition: 0.5s;
-        cursor: pointer;
-        border: none;
-        display: block;
-        margin:auto;
-        width: 100px;
-        
+	button[type=submit] {
+		background-color: lighten($gold, 35);
+		color: $primaryColor;
+		padding: 0.8em;
+		font: {
+			size: 0.8em;
+			family: $font-serif;
+			weight: 800;
+		}
+		transition: 0.5s;
+		cursor: pointer;
+		border: none;
+		display: block;
+		margin: auto;
+		width: 100px;
 
-        &:hover {
-            background-color: lighten($primaryColor, 5);
-            color: $gold;
-        }
-    }
+		&:hover {
+			background-color: lighten($primaryColor, 5);
+			color: $gold;
+		}
+	}
 }

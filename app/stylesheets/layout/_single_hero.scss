@@ -1,16 +1,16 @@
 .single-hero {
-    min-width: 100%;
-    min-height: 90vh;
-    text-align: center;
-    color: $lightSilver;
+	min-width: 100%;
+	min-height: 90vh;
+	text-align: center;
+	color: $lightSilver;
 
-    &__bcg-opacity {
-        width: 100%;
-        min-height: 90vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        background: $brown;
-    }  
-}  
+	&__bcg-opacity {
+		width: 100%;
+		min-height: 90vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		background: $brown;
+	}
+}

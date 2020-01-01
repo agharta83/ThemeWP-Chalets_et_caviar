@@ -8,29 +8,22 @@
  */
 while( have_posts() ) :
     the_post();
-    get_header('single');
+   
+     // On teste si le type de taxonomy est "vente" ou "location"
+    if (has_term('vente', 'type_annonce')) :
+        get_header('single');
+        // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
+    endif;
+
+    // On teste si la taxonomy est "location"
+    if (has_term('location', 'type_annonce')) :
+        get_header('single');
+        // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
+    endif;
 ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <?php
-            // On teste si le type de taxonomy est "vente" ou "location"
-            if (has_term('vente', 'type_annonce')) :
-                echo 'VENTES';
-                //get_template_part('template-parts/content', get_post_type() ); // TODO Faire la vue
-                // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
-            endif;
-
-            // On teste si la taxonomy est "location"
-            if (has_term('location', 'type_annonce')) :
-                echo 'LOCATIONS';
-                //get_template_part('template-parts/content', get_post_type() ); // TODO Faire la vue
-                // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
-            endif;
-        ?>
-    </main>
-</div>
-
 <?php endwhile; ?>
-    
+
+<?php get_template_part( 'template-parts/content/page', 'contact' ); ?>
+
 <?php get_footer(); ?>

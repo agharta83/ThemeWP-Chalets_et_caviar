@@ -1,47 +1,46 @@
 .section {
-    width: 100%;
-    min-height: 100vh;
-    background: $goldGradient;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	background: $goldGradient;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 
-    &__title {
-        margin-top: 3.5em;
-        flex-basis: 100%;
-        text-align:center;
-        justify-content: center;
-        align-self: center;
-        font: {
-            family: $font-serif;
-            size: 2em;
-            weight: bold;
-        }
-        color: $lightSilver;
+	&__title {
+		margin-top: 3.5em;
+		flex-basis: 100%;
+		text-align: center;
+		justify-content: center;
+		align-self: center;
+		font: {
+			family: $font-serif;
+			size: 2em;
+			weight: bold;
+		}
+		color: $lightSilver;
 
-        & span {
-            color: $primaryColor-opacity;
-            font : {
-                size: 0.7em;
-                weight: bold;
-            }
-        }
-    }
+		& span {
+			color: $primaryColor-opacity;
+			font : {
+				size: 0.7em;
+				weight: bold;
+			}
+		}
+	}
 }
-
 
 /* Reveal on scroll */
 .revealSectionTitle {
-    opacity: 0;
-    transform: translateY(-40px);
-    transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateY(-40px);
+	transition: all 0.6s ease-out;
 }
 .revealSectionTitle.visible {
-    opacity: 1;
-    transform: none;
+	opacity: 1;
+	transform: none;
 }
 
 .section.visible {
-    opacity: 1;
+	opacity: 1;
 }
