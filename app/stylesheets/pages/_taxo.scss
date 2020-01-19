@@ -1,0 +1,118 @@
+.hero-taxo {
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    
+    &__title {
+        text-transform: uppercase;
+        color: $lightSilver;
+        font: {
+            family: $font-sans-serif;
+            size: 3em;
+        }
+    }
+}
+
+.section-taxo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 10em 0;
+}
+
+.section--image {
+    background: $goldGradient;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 1rem 2rem;
+}
+
+.right {
+    width: 35%;
+}
+
+.taxo-link {
+    width: 15%;
+    height: 100%;
+    margin: auto;
+}
+
+.headline {
+    display: flex;
+    margin: auto;
+    color: $lightSilver;
+    font: {
+        size: 1.5em;
+        family: $font-serif;
+        weight: bold;
+    }
+}
+
+.content {
+    color: $lightSilver;
+    font: {
+        family: $font-sans-serif;
+    }
+}
+
+.image-wrap {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: -10px;
+        left: -10px;
+        background-color: $primaryColor;
+        z-index: 0;
+        border-radius: 5px;
+    }   
+}
+
+.image {
+    width: 750px;
+	height: 400px;
+	position: relative;
+	top: -8px;
+	right: -8px;
+    border-radius: 5px;
+    z-index: 2;
+}        
+
+.digit {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+         -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+             -o-transform: translateX(-40px);
+                    transform: translateX(-40px);
+    -webkit-transition: all 0.6s ease-out;
+         -moz-transition: all 0.6s ease-out;
+            -ms-transition: all 0.6s ease-out;
+             -o-transition: all 0.6s ease-out;
+                    transition: all 0.6s ease-out;
+}
+
+.digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}

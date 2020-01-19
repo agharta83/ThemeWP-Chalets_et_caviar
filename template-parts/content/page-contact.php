@@ -1,6 +1,6 @@
-<section id="contact" class="section">
-          <h3 class="section__title revealSectionTitle">contactez <span>Nous</span></h3>
-        <div class="contact">
+<section id="contact" class="section section-pins">
+          <h3 class="section__title contact-title revealSectionTitle">contactez <span>Nous</span></h3>
+        <div class="contact animate1">
             
             <div class="contact-form">
                 <form action="">
@@ -43,7 +43,5 @@
                 </div>   
               </div>
         </div>
-
-        
 
       </section>

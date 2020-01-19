@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="section-hero section hero">
       <div class="hero__bcg-opacity">
         <div class="hero__title-wrapper">
           <h1 class="hero__title">Chalets et caviar</h1>

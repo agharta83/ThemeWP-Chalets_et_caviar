@@ -1,8 +1,16 @@
 .footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $primaryColor;
+	background: $goldGradient;
+	color: $lightSilver;
+	padding: 0 2em;
+	font: {
+		family: $font-cursive;
+	}
 }
 
 .copyright__title {
@@ -11,6 +19,9 @@
 }
 
 .copyright__text {
-	font-size: 0.7em;
+	font: {
+		size: 0.7em;
+		family: $font-sans-serif;
+	}
 	margin: 0.2em;
 }

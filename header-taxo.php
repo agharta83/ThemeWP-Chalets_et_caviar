@@ -10,10 +10,6 @@
  */
 ?>
 
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -26,15 +22,14 @@
 <?php wp_body_open(); ?>
   <div class="wrapper">   
 
-  <?php get_template_part( 'template-parts/content/frontpage', 'hero' ); ?>
+  <?php get_template_part( 'template-parts/content/taxo', 'hero' ); ?>
 
     <header class="header">
       <div class="header__logo">
-        <a href="#">Chalets et caviar</a>
+        <a href="<?php echo home_url('/'); ?>">Chalets et caviar</a>
       <div class="header__logo-baseline">Agence immobilière à Courchevel</div>
       </div>
-      <?php
-      ?>
+
       <nav class="main-nav">
         <a href="<?php echo home_url('/'); ?>" class="main-nav__link">Accueil</a>
         <a href="<?php echo get_term_link($term = 'vente', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Ventes</a>
@@ -42,4 +37,3 @@
         <a href="#contact" class="main-nav__link">Contact</a>
       </nav>
     </header>
-

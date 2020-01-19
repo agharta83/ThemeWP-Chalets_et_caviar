@@ -10,7 +10,6 @@
     <h3 class="article__headline--reverse">
       <span><?php the_title(); ?></span>
       <span class="article__headline__surface-loc"><?php the_field('places_minimum'); ?> à <?php the_field('places_maximum'); ?> places</span>
-      <div class="article-reverse__bar"></div>
     </h3>
     <div class="article__text--reverse">
       <div class="article__text__wrapper">

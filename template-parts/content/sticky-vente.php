@@ -11,7 +11,6 @@
 <h3 class="article__headline">
   <span class="article__headline__text"><?php the_title(); ?></span>
   <span class="article__headline__surface"><?php the_field('surface'); ?> m²</span>
-  <div class="article__headline__bar"></div>
 </h3>
 <div class="article__text">
   <div class="article__text__wrapper">

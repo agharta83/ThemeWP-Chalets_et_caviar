@@ -1,30 +1,34 @@
 require('scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js');
+require('scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js');
 var gsap = require("gsap/dist/gsap").gsap;
 var ScrollMagic = require('scrollmagic');
 
 var app = {
   init: function() {
     app.InitScrollMagic();
+    app.ScrollMagicSection();
+    app.ScrollMagicArticle();
+    app.ScrollMagicForm();
+    app.ScrollMagixTaxo();
+    
   },
 
-  // Scroll Animation
-  InitScrollMagic: function() {
+   // Scroll Animation on FrontPage
+   InitScrollMagic: function() {
     // Init ScrollMagic
-    var ctrl = new ScrollMagic.Controller({
+    var globalController = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: 'onLeave'
       }
     });
 
     // Create scene section pins
-    $("section").each(function() {
+    $(".section-pins").each(function() {
       new ScrollMagic.Scene({
         triggerElement: this
       })
       .setPin(this)
-      .addTo(ctrl)
-
-      
+      .addTo(globalController)
     });
 
     // Sticky navbar
@@ -32,102 +36,153 @@ var app = {
       triggerElement: 'header',
     })
     .setPin('header', {pushFollowers: false})
-    .addTo(ctrl);
+    .addTo(globalController);
+  },
+
+  // Section Animation (ToggleClass and reveal on scroll)
+  ScrollMagicSection: function() {
+    // Init ScrollMagic
+    var SectionController = new ScrollMagic.Controller();
 
     // Reveal on scroll
-    /** Title section , border article left*/
-    var $allSections = $('.section');
+    /** SECTIONS */
+    var $allSections = $('.section-pins');
     $allSections.each(function(i) {
-      // title
+      // Section title
       new ScrollMagic.Scene({
-        triggerElement: $allSections[i],
-        triggerHook: 1,
+        triggerElement: this,
+        triggerHook: 0.2,
         duration: "80%",
+        offset: 50
   
       })
-      .setClassToggle('.revealSectionTitle', 'visible')
-      .addTo(ctrl);
+      .setClassToggle($(this).children("h3")[0], 'visible')
+      .addTo(SectionController);
+    })
+  },
 
-      // border
+  // ARTICLE
+  ScrollMagicArticle: function() {
+    var ArticleController = new ScrollMagic.Controller();
+
+    var $article = $('.article');
+    $article.each(function() {
+      // Article border
       new ScrollMagic.Scene({
-        triggerElement: $allSections[i],
-        triggerHook: 1,
+        triggerElement: this,
+        triggerHook: 0.2,
         duration: "80%"
       })
-      .setClassToggle('.article', 'border-visible')
-      .addTo(ctrl);
-    })
+      .setClassToggle(this, 'border-visible')
+      .addTo(ArticleController);
 
-     // change opacity background on scroll
-     new ScrollMagic.Scene({
-      triggerElement: '#ventes',
-      offset: 200,
-      triggerHook: 0,
-      duration: "100%"
-    })
-    .setClassToggle('.section', 'visible')
-    .addTo(ctrl);
+      // Section Vente Article Image
+      new ScrollMagic.Scene({
+        triggerElement: '#ventes',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.reveal1', 'visible')
+      .addTo(ArticleController);
 
-    /** #ventes images */
+      // Section Vente Text Left
+      new ScrollMagic.Scene({
+        triggerElement: '#ventes',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.text-reveal1Left', 'visible')
+      .addTo(ArticleController);
+
+      // Section Vente Text Right
+      new ScrollMagic.Scene({
+        triggerElement: '#ventes',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.text-reveal1Right', 'visible')
+      .addTo(ArticleController);
+
+      // Section Location Article Image
+      new ScrollMagic.Scene({
+        triggerElement: '#locations',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.reveal2', 'visible')
+      .addTo(ArticleController);
+
+      // Section Location Text Left
+      new ScrollMagic.Scene({
+        triggerElement: '#locations',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.text-reveal1Left', 'visible')
+      .addTo(ArticleController);
+
+      // Section Location Text Right
+      new ScrollMagic.Scene({
+        triggerElement: '#locations',
+        triggerHook: 0.2,
+        duration: "80%",
+      })
+      .setClassToggle('.text-reveal1Right', 'visible')
+      .addTo(ArticleController); 
+    })
+  },
+
+   // Animation on Contact form
+   ScrollMagicForm: function() {
+    var formController = new ScrollMagic.Controller();
+
     new ScrollMagic.Scene({
-      triggerElement: '#ventes',
-      triggerHook: 1,
-      duration: "80%",
-
+      triggerElement: ".contact",
+      triggerHook: 0.9,
+      duration: '80%',
+      offset: 50
     })
-    .setClassToggle('.reveal1', 'visible')
-    .addTo(ctrl);
+    .setClassToggle('.animate1', 'visible')
+    .addTo(formController)
+  },
 
-    // Text Left
-    new ScrollMagic.Scene({
-      triggerElement: '#ventes',
-      triggerHook: 1,
-      duration: "80%",
+  // Scroll Animation on Taxo page
+  ScrollMagixTaxo: function() {
+    var TaxoController = new ScrollMagic.Controller(
+      {
+        globalSceneOptions: {
+          triggerHook: "onEnter",
+          duration: "150%"
+        }
+      }
+    );
+  
+    // Parallax rows
+    $('.section-taxo').each(function(i) {
+      var $row = $(this).find('.row');
 
-    })
-    .setClassToggle('.text-reveal1Left', 'visible')
-    .addTo(ctrl);
+      new ScrollMagic.Scene({
+        triggerElement: $row[0],
+        triggerHook: 0.5,
+        duration: '150%'
+      })
+      .setTween($row[0], {y: '80%', ease: Linear.easeNone})
+      .addTo(TaxoController);
+    });
+      
+    // RevealElements
+    var $revealElements = $('.digit');
 
-    // Text Right
-    new ScrollMagic.Scene({
-      triggerElement: '#ventes',
-      triggerHook: 1,
-      duration: "80%",
-
-    })
-    .setClassToggle('.text-reveal1Right', 'visible')
-    .addTo(ctrl);
-
-    /** #location image*/
-    new ScrollMagic.Scene({
-      triggerElement: '#locations',
-      triggerHook: 1,
-      duration: "80%",
-    })
-    .setClassToggle('.reveal2', 'visible')
-    .addTo(ctrl);
-
-    // Text Left
-    new ScrollMagic.Scene({
-      triggerElement: '#locations',
-      triggerHook: 1,
-      duration: "80%",
-
-    })
-    .setClassToggle('.text-reveal1Left', 'visible')
-    .addTo(ctrl);
-
-    // Text Right
-    new ScrollMagic.Scene({
-      triggerElement: '#locations',
-      triggerHook: 1,
-      duration: "80%",
-
-    })
-    .setClassToggle('.text-reveal1Right', 'visible')
-    .addTo(ctrl);
-
-  }
-};
+    $revealElements.each(function(i) {
+      new ScrollMagic.Scene({
+        triggerElement: $revealElements[i],
+        offset: 50,
+        reverse: true
+      })
+      .setClassToggle($revealElements[i], "visible")
+      .addTo(TaxoController);
+    })   
+  },
+}
 
 $(app.init);

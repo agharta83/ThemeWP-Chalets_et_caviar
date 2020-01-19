@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="ventes" class="section">
+<section id="ventes" class="section section-pins">
     <h3 class="section__title revealSectionTitle">nos ventes <span>à la Une</span></h3>
 
     <!-- Traitement pour afficher le template des chalets "Ventes à la Une" en fonction de l'index de $posts -->
@@ -30,7 +30,7 @@
 
 </section>
 
-<section id="locations" class="section">
+<section id="locations" class="section section-pins">
     <h3 class="section__title revealSectionTitle">nos locations <span>à la Une</span></h3>
 
     <!-- Traitement pour afficher le template des chalets "Location à la Une" en fonction de l'index de $posts -->

@@ -1,4 +1,4 @@
-<section class="-single-hero">
+<section class="section-hero section single-hero">
     <div class="single-hero__bcg-opacity">
         <div class="single-hero__title-wrapper">
             <h1 class="single-hero__title"><?php the_title(); ?></h1>
