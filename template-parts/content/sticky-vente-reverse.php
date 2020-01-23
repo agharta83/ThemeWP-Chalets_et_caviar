@@ -1,9 +1,8 @@
 <article class="article--reverse">
 
             <div class="article__wrap__img--reverse reveal1">
-                <span class="article__img__icone--reverse"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
-              <img class="article__img--reverse" src="<?php the_post_thumbnail_url(); ?>">
-              
+              <span class="article__img__icone--reverse"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
+              <a href="<?php the_post_thumbnail_url(); ?>"><img class="article__img--reverse" src="<?php the_post_thumbnail_url(); ?>"></a>    
             </div>
             
             <div class="article__content--reverse text-reveal1Right">

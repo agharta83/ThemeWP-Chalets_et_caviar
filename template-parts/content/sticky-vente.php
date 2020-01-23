@@ -3,7 +3,7 @@
 <div class="article__wrap__img reveal1">
   <span class="article__img__icone"><i class="fa fa-gratipay" aria-hidden="true"></i></span>
   <?php if ( has_post_thumbnail() ) : ?>
-    <img class="article__img" src="<?php the_post_thumbnail_url(); ?>" >
+    <a href="<?php the_post_thumbnail_url(); ?>"><img class="article__img" src="<?php the_post_thumbnail_url(); ?>" ></a>
   <?php endif; ?>
 </div>
 

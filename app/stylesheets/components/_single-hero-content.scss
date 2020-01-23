@@ -50,6 +50,7 @@
 		font : {
 			size: 1.6em;
 			weight: bold;
+			family: $font-serif;
 		}
 		padding: 0.2em 0.4em;
 		background: lighten($gold, 35);
@@ -63,8 +64,9 @@
 			text-align: center;
 			color: $primaryColor-opacity;
 			font : {
-				size: 0.6em;
+				size: 1.2em;
 				weight: bold;
+				family: $font-serif;
 			}
 			padding: 0.2em 0.4em;
 			background: lighten($gold, 35);

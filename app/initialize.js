@@ -10,6 +10,7 @@ var app = {
     app.ScrollMagicArticle();
     app.ScrollMagicForm();
     app.ScrollMagixTaxo();
+    app.gestionForm();
     
   },
 
@@ -181,8 +182,36 @@ var app = {
       })
       .setClassToggle($revealElements[i], "visible")
       .addTo(TaxoController);
-    })   
+    })
   },
+
+  // Gestion du formulaire
+  gestionForm: function() {
+    // Change la bordure de l'input et du textarea lors du focus
+    $('input').focus(function() {
+      $(this).css('border', '3px solid #D4AF37');
+    });
+
+    $('textarea').focus(function() {
+      $(this).css('border', '3px solid #D4AF37');
+    });
+
+    // Enleve la bordure lors de la perte du focus de l'input ou textarea
+    $('input').blur(function() {
+      $(this).css('border', 'none');
+    });
+
+    $('textarea').blur(function() {
+      $(this).css('border', 'none');
+    });
+
+    // Soumission du formulaire
+    $('form').submit(function(e) {
+      // Le form disparait
+      $('.contact').children().hide(2000, 'linear');
+      $('.contact').html(`<div class='contact-form' style='height: 67vh; text-align:center; color: #EEFCFF; font-size: 2em; font-family: Sulphur Point, sans-serif; padding-top:2em;'>Votre message a bien été envoyé !</div>`);
+    });
+  }
 }
 
 $(app.init);

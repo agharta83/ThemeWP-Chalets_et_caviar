@@ -39,8 +39,27 @@ function mytheme_enqueue_scripts() {
     wp_enqueue_script( 'mytheme-script', get_theme_file_uri() . '/public/js/app.js' );
 }
 
-// 
+// Fonction pour récupérer la taxonomy courante
 function get_current_archive_taxonomy() {
   $term = get_term_by( 'slug', get_query_var('term'), get_query_var('taxonomy') );
   return $term;
 }
+
+// Suppression des rôles de bas de WP
+function admin_remove_role() {
+  remove_role('subscriber');
+  remove_role('editor');
+  remove_role('contributor');
+  remove_role('author');
+}
+add_action( 'init', 'admin_remove_role');
+
+// Suppression de certains items du menu BO de WP
+function remove_menu_items_agence() {
+  remove_menu_page('index.php');
+  remove_menu_page('separator1');
+  remove_menu_page('edit.php');
+  remove_menu_page('edit-comments.php');
+  remove_menu_page('themes.php');
+}
+add_action('admin_menu', 'remove_menu_items_agence');

@@ -5,11 +5,11 @@
             <div class="single-hero__content">
                 <div class="single-hero__content-left">
                     <?php if ( has_post_thumbnail() ) : ?>
-                    <img class="single-hero__content__img" src="<?php the_post_thumbnail_url(); ?>">
+                        <a href="<?php the_post_thumbnail_url(); ?>"><img class="single-hero__content__img" src="<?php the_post_thumbnail_url(); ?>"></a>
                     <?php endif; ?>
-                    <img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_1'); ?>">
-                    <img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_2'); ?>">
-                    <img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_3'); ?>">
+                    <a href="<?php the_field('photo_du_chalet_1'); ?>"><img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_1'); ?>"></a>
+                    <a href="<?php the_field('photo_du_chalet_2'); ?>"><img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_2'); ?>"></a>
+                    <a href="<?php the_field('photo_du_chalet_3'); ?>"><img class="single-hero__content__img" src="<?php the_field('photo_du_chalet_3'); ?>"></a>    
                 </div>
 
                 <div class="single-hero__content-right">

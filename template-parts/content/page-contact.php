@@ -1,4 +1,11 @@
-<section id="contact" class="section section-pins">
+<?php
+// Vérifie si on est sur une page de taxonomy
+if ( is_tax() ) : ?>
+  <section id="contact" class="section section-pins section-contact-taxo animate1">
+<?php else : ?>
+  <section id="contact" class="section section-pins">
+<?php endif; ?>
+
           <h3 class="section__title contact-title revealSectionTitle">contactez <span>Nous</span></h3>
         <div class="contact animate1">
             
@@ -6,15 +13,15 @@
                 <form action="">
                   <div class="field">
                     <label for="name">Nom</label>
-                    <input id="name" type="text">
+                    <input id="name" type="text" required>
                   </div>            
                   <div class="field">
                     <label for="email">Email</label>
-                    <input id="email" type="text">
+                    <input id="email" type="text" required>
                   </div>        
                   <div class="field">
                     <label for="message">Message</label>
-                    <textarea id="message" type="text"></textarea>
+                    <textarea id="message" type="text" required></textarea>
                   </div>                   
                   <div class="field">
                     <button type="submit">Envoyer</button>
@@ -26,7 +33,7 @@
                 <div class="contact-info__item">
                   <i class="contact-info__item__icon fa fa-envelope"></i>
                   <h5 class="contact-info__item__title">E-mail</h5>
-                  <a class="contact-info__item__info" href="mailto:audrey@oclock.io"><p>chalets-et-caviar@opc.com</p></a>
+                  <a class="contact-info__item__info" href="mailto:chalets-et-caviar@opc.com"><p>chalets-et-caviar@opc.com</p></a>
                 </div>     
                 <div class="contact-info__item">
                   <i class="contact-info__item__icon fa fa-phone"></i>

@@ -19,6 +19,7 @@
 
 	&-pins {
 		margin: 0 auto;
+		padding-bottom: 0.5em;
 	}
 
 	&__title {
@@ -43,6 +44,10 @@
 			}
 		}
 	}
+}
+
+.wrapper > section:last-child {
+	padding-bottom: 20em;
 }
 
 /* Reveal on scroll */

@@ -4,7 +4,7 @@
             <div class="col left">
                 <div class="image-wrap digit">
                 <?php if ( has_post_thumbnail() ) : ?>
-                    <img class="image digit" src="<?php the_post_thumbnail_url(); ?>" >
+                    <a href="<?php the_post_thumbnail_url(); ?>"><img class="image digit" src="<?php the_post_thumbnail_url(); ?>" ></a>
                 <?php endif; ?>
                 </div>
             </div>
