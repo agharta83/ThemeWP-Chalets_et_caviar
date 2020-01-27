@@ -39,6 +39,26 @@
 	transform: none;
 }
 
+.text-reveal2Left {
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: all 0.6s ease-out;
+}
+.text-reveal2Left.visible {
+	opacity: 1;
+	transform: none;
+}
+
+.text-reveal2Right {
+	opacity: 0;
+	transform: translateX(40px);
+	transition: all 0.6s ease-out;
+}
+.text-reveal2Right.visible {
+	opacity: 1;
+	transform: none;
+}
+
 .article.border-visible {
 	border-right: 2px solid $primaryColor;
 	transition: all 0.6s ease-out;

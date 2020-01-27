@@ -5,7 +5,7 @@
     <a href="<?php the_post_thumbnail_url(); ?>"><img class="article__img" src="<?php the_post_thumbnail_url(); ?>"></a>
   </div>
   
-  <div class="article__content text-reveal1Left">
+  <div class="article__content text-reveal2Left">
     <h3 class="article__headline">
       <span><?php the_title(); ?></span>
       <span class="article__headline__surface-loc"><?php the_field('places_minimum'); ?> à <?php the_field('places_maximum'); ?> places</span>

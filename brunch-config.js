@@ -34,6 +34,12 @@ exports.npm = {
   }
 };
 
+exports.modules = {
+  autoRequire: {
+    'js/app.js' : ['initialize']
+  }
+}
+
 exports.watcher = {
   usePolling: true,
   awaitWriteFinish: true
