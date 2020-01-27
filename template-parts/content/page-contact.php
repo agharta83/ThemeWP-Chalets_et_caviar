@@ -10,21 +10,23 @@ if ( is_tax() ) : ?>
         <div class="contact animate1">
             
             <div class="contact-form">
-                <form action="">
+                <form action="" method="POST">
                   <div class="field">
                     <label for="name">Nom</label>
-                    <input id="name" type="text" required>
+                    <input id="name" name="name" type="text">
                   </div>            
                   <div class="field">
                     <label for="email">Email</label>
-                    <input id="email" type="text" required>
+                    <input id="email" name="email" type="text">
                   </div>        
                   <div class="field">
                     <label for="message">Message</label>
-                    <textarea id="message" type="text" required></textarea>
-                  </div>                   
+                    <textarea id="message" name="message" type="text"></textarea>
+                  </div>
+                  <input type="hidden" name="action" value="contact">
+                  <?php wp_nonce_field( 'ajax_contact_nonce', 'security' ) ?>                   
                   <div class="field">
-                    <button type="submit">Envoyer</button>
+                    <button id="send-message" type="submit">Envoyer</button>
                   </div>
                 </form>
               </div>

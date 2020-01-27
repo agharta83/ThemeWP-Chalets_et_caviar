@@ -6,3 +6,10 @@
 	border-radius: 5px;
 }
 
+.errorMsg {
+	color: lighten($gold, 10);
+	font : {
+		family : $font-sans-serif;
+	}
+}
+
