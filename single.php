@@ -12,13 +12,11 @@ while( have_posts() ) :
      // On teste si le type de taxonomy est "vente" ou "location"
     if (has_term('vente', 'type_annonce')) :
         get_header('single');
-        // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
     endif;
 
     // On teste si la taxonomy est "location"
     if (has_term('location', 'type_annonce')) :
         get_header('single');
-        // the_post_navigation(); // TODO Affiche la navigation vers le post suivant / précédent
     endif;
 ?>
 

@@ -33,8 +33,8 @@
             </div>
             <nav class="main-nav">
                 <a href="<?php echo home_url('/'); ?>" class="main-nav__link">Accueil</a>
-                <a href="#ventes" class="main-nav__link">Ventes</a>
-                <a href="#location" class="main-nav__link">Locations</a>
+                <a href="<?php echo get_term_link($term = 'vente', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Ventes</a>
+                <a href="<?php echo get_term_link($term = 'location', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Locations</a>
                 <a href="#contact" class="main-nav__link">Contact</a>
             </nav>
         </header>
