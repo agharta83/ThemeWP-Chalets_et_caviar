@@ -35,6 +35,9 @@
 			padding-bottom: 5em;
 			justify-content: space-around;
 		}
+		@include respond-to(mobile){
+			margin-bottom: 10em;
+		}
 
 		&-loc {
 			height: 60vh;

@@ -70,6 +70,9 @@
 				@include respond-to(handhelds-landscape){
 					margin: 0;
 				}
+				@include respond-to(mobile){
+					font-size: 0.8em;
+				}
 			}
 		}
 

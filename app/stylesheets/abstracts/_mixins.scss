@@ -2,8 +2,8 @@
 $small-desktop: 960px;
 $large-desktop: 1200px;
 $handheld: 768px; // OK
-$handhelds-landscape: 1024px; // WiP min width: 768px; max-width: 1024px
-$mobile: 640px;
+$handhelds-landscape: 1024px; // OK
+$mobile: 640px; // WIP
 $mobile-landscape: 480px;
 
 @mixin respond-to($media) {
@@ -24,10 +24,6 @@ $mobile-landscape: 480px;
     @if $media == mobile {
     @media only screen and (max-width: $mobile) { @content; }
     }
-    @if $media == mobile-portrait {
-    @media only screen  and (max-width: $mobile)
-                        and (orientation : portrait) { @content; }
-    }
     @if $media == mobile-landscape {
     @media only screen  and (min-width: 320px)
                         and (max-width: $mobile-landscape)
@@ -44,7 +40,7 @@ $mobile-landscape: 480px;
 /* To be used like this */
 
 body {
-  @include respond-to(handhelds-landscape){
+  @include respond-to(mobile){
     // css code here
   }
 }

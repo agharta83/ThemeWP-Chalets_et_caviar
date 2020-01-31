@@ -3,6 +3,11 @@
 	flex-direction: column;
 	align-items: center;
 	margin: 1em 2.5em;
+	@include respond-to(mobile){
+		margin: 0 0.5em;
+		align-items: flex-start;
+		
+	}
 
 	& a {
 		font: {
@@ -11,6 +16,9 @@
 		}
 		color: $lightSilver;
 		text-decoration: none;
+		@include respond-to(mobile){
+			font-size: 1.5em;
+		}
 
 		&:hover {
 			color: $gold;
