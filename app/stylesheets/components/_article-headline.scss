@@ -15,7 +15,12 @@
 			font-size: 1.2em;
 			text-align: right;
 			margin: 0 0 0.5em 0;
-		  }
+		}
+		@include respond-to(handhelds-landscape){
+			font-size: 1.2em;
+			text-align: right;
+			margin: 0 0 0.5em 0;
+		}
 
 		&--reverse {
 			font: {
@@ -33,7 +38,12 @@
 				font-size: 1.2em;
 				text-align: left;
 				margin: 0 0 0.5em 0;
-			  }
+			}
+			@include respond-to(handhelds-landscape){
+				font-size: 1.2em;
+				text-align: left;
+				margin: 0 0 0.5em 0;
+			}
 		}
 
 		&__surface {
@@ -53,7 +63,11 @@
 			@include respond-to(handhelds){
 				display: inline;
 				margin-left: 1em;
-			  }
+			}
+			@include respond-to(handhelds-landscape){
+				display: inline;
+				margin-left: 1em;
+			}
 
 			&-loc {
 				display: block;
@@ -70,6 +84,10 @@
 				background: lighten($gold, 35);
 				border-radius: 4px;
 				@include respond-to(handhelds){
+					display: inline;
+					margin-left: 1.5em;
+				}
+				@include respond-to(handhelds-landscape){
 					display: inline;
 					margin-left: 1.5em;
 				  }

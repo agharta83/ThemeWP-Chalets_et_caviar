@@ -1,8 +1,8 @@
 /* Responsive Mixins */
 $small-desktop: 960px;
 $large-desktop: 1200px;
-$handheld: 768px;
-$handhelds-landscape: 1024px;
+$handheld: 768px; // OK
+$handhelds-landscape: 1024px; // WiP min width: 768px; max-width: 1024px
 $mobile: 640px;
 $mobile-landscape: 480px;
 
@@ -44,7 +44,7 @@ $mobile-landscape: 480px;
 /* To be used like this */
 
 body {
-  @include respond-to(handhelds){
+  @include respond-to(handhelds-landscape){
     // css code here
   }
 }

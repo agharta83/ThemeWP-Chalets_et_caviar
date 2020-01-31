@@ -7,7 +7,13 @@
 			font-size: 1em;
 			text-align: right;
 			padding: 0;
-		  }
+		}
+		@include respond-to(handhelds-landscape){
+			width: 45%;
+			font-size: 1em;
+			text-align: right;
+			padding: 0;
+		}
 
 		&--reverse {
 			padding-right: 2em;
@@ -19,7 +25,13 @@
 				font-size: 1em;
 				text-align: left;
 				padding: 0 0 0 0.3em;
-			  }
+			}
+			@include respond-to(handhelds-landscape){
+				width: 45%;
+				font-size: 1em;
+				text-align: left;
+				padding: 0 0 0 0.3em;
+			}
 		}
 	}
 
@@ -41,14 +53,22 @@
 			@include respond-to(handhelds){
 				height: 100%;
 				margin: 0;
-			  }
+			}
+			@include respond-to(handhelds-landscape){
+				height: 100%;
+				margin: 0;
+			}
 
 			& p:nth-child(2) {
 				height: 80px;
 				@include respond-to(handhelds){
 					height: 35px;
 					margin: 0;
-				  }
+				}
+				@include respond-to(handhelds-landscape){
+					height: 100%;
+					margin: 0;
+				}
 
 			}
 		}
@@ -58,7 +78,11 @@
 		border-bottom: 1px solid $lightSilver;
 		padding-bottom: 0.8em;
 		@include respond-to(handhelds){
-			padding:0 0 0.2em 0;
+			padding: 0 0 0.2em 0;
+			margin: 0;
+		}
+		@include respond-to(handhelds-landscape){
+			padding: 0 0 0.2em 0;
 			margin: 0;
 		  }
 	}
@@ -71,6 +95,9 @@
 		color: $lightSilver;
 		background-color: $primaryColor;
 		@include respond-to(handhelds){
+			font-size: 0.8em;
+		}
+		@include respond-to(handhelds-landscape){
 			font-size: 0.8em;
 		  }
 

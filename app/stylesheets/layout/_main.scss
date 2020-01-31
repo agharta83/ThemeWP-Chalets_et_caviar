@@ -5,5 +5,8 @@
 body {
 	@include respond-to(handhelds){
 		display: flex;
-	  }
+	}
+	@include respond-to(handhelds-landscape){
+		display: flex;
+	}
 }

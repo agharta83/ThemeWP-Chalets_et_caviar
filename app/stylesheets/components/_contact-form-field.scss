@@ -14,6 +14,9 @@
 	}
 	@include respond-to(handhelds){
 		width: 85%;
+	}
+	@include respond-to(handhelds-landscape){
+		width: 85%;
 	  }
 
 	input[type=text],
@@ -51,6 +54,9 @@
 		margin: auto;
 		width: 100px;
 		@include respond-to(handhelds){
+			margin-bottom: 1em;
+		}
+		@include respond-to(handhelds-landscape){
 			margin-bottom: 1em;
 		  }
 
