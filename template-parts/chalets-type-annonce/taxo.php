@@ -12,7 +12,7 @@
 
             <div class="col right">
                 <h3 class="headline digit">
-                    <span><?php the_title(); ?></span>
+                    <a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a>
                     <?php if( !empty(get_field('surface')) ) : ?>
                         <span class="article__headline__surface digit"><?php the_field('surface'); ?> m²</span>
                     <?php endif; ?>
@@ -37,10 +37,6 @@
                     
                 </div>
             </div> 
-
-            <div class="digit taxo-link article__wrapper__link">
-                <a href="<?php the_permalink(); ?>" class="article__link__more" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-            </div>
         </div>
     </div>
 </section>

@@ -1,5 +1,5 @@
 .hero {
-	min-width: 100%;
+	max-width: 100%;
 	min-height: 90vh;
 	text-align: center;
 	color: $lightSilver;
@@ -11,6 +11,5 @@
 		align-items: center;
 		justify-content: space-around;
 		flex-direction: column;
-		//background: linear-gradient(to left, transparent, $brown);
 	}
 }

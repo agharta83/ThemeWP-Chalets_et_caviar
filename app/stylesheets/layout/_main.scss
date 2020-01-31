@@ -1,3 +1,9 @@
 .main {
 	width: 100%;
 }
+
+body {
+	@include respond-to(handhelds){
+		display: flex;
+	  }
+}

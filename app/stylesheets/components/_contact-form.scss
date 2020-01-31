@@ -4,11 +4,17 @@
 	height: 67vh;
 	padding: 2em;
 	align-items: center;
+	@include respond-to(handhelds){
+		padding: 0.5em;
+	  }
 
 	form {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		@include respond-to(handhelds){
+
+		  }
 	}
 }
 

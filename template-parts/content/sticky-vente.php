@@ -9,7 +9,7 @@
 
 <div class="article__content text-reveal1Left">
 <h3 class="article__headline">
-  <span class="article__headline__text"><?php the_title(); ?></span>
+  <a href="<?php the_permalink(); ?>"><span class="article__headline__text"><?php the_title(); ?></span></a>
   <span class="article__headline__surface"><?php the_field('surface'); ?> m²</span>
 </h3>
 <div class="article__text">
@@ -21,9 +21,6 @@
       <p class="article__item"><?php the_field('prix'); ?><i class="fa fa-caret-left article__icone-arrow" aria-hidden="true"></i><span class="article__icone"><i class="fa fa-eur" aria-hidden="true"></i></span></p>
   </div>
     
-    <div class="article__wrapper__link">
-        <a href="<?php the_permalink(); ?>" class="article__link__more" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-    </div>
 </div>
 
 </div>

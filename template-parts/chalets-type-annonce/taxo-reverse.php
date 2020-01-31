@@ -11,7 +11,7 @@
 
             <div class="col right">
                 <h3 class="headline digit">
-                    <span><?php the_title(); ?></span>
+                    <a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a>
                     
                     <?php if( !empty(get_field('surface')) ) : ?>
                         <span class="article__headline__surface digit"><?php the_field('surface'); ?> m²</span>
@@ -35,9 +35,6 @@
                         <p class="article__item"><span class="article__icone"><i class="fa fa-eur" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('prix_semaine'); ?> / semaine</p>
                     <?php endif; ?>
                 </div>
-            </div>
-            <div class="digit taxo-link article__wrapper__link">
-                <a href="<?php the_permalink(); ?>" class="article__link__more" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>

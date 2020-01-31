@@ -36,7 +36,7 @@ var app = {
 
     // Sticky navbar
     new ScrollMagic.Scene({
-      triggerElement: 'header',
+      triggerElement: 'header'
     })
     .setPin('header', {pushFollowers: false})
     .addTo(homeController);

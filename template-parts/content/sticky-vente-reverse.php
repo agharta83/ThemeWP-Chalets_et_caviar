@@ -7,7 +7,7 @@
             
             <div class="article__content--reverse text-reveal1Right">
               <h3 class="article__headline--reverse">
-                <span class="article__headline__text--reverse"><?php the_title(); ?></span>
+                <a href="<?php the_permalink(); ?>"><span class="article__headline__text--reverse"><?php the_title(); ?></span></a>
                 <span class="article__headline__surface"><?php the_field('surface'); ?> m²</span>
               </h3>
               <div class="article__text--reverse">
@@ -19,9 +19,6 @@
                     <p class="article__item"><span class="article__icone"><i class="fa fa-eur" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('prix'); ?></p>
                 </div>
                   
-              </div>
-              <div class="article__wrapper__link">
-                  <a href="<?php the_permalink(); ?>" class="article__link__more" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
               </div>
               
             </div>

@@ -12,6 +12,9 @@
 			family: $font-serif;
 		}
 	}
+	@include respond-to(handhelds){
+		width: 85%;
+	  }
 
 	input[type=text],
 	input[type=email],
@@ -47,6 +50,9 @@
 		display: block;
 		margin: auto;
 		width: 100px;
+		@include respond-to(handhelds){
+			margin-bottom: 1em;
+		  }
 
 		&:hover {
 			background-color: lighten($primaryColor, 5);

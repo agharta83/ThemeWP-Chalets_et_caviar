@@ -7,7 +7,7 @@
   
   <div class="article__content text-reveal2Left">
     <h3 class="article__headline">
-      <span><?php the_title(); ?></span>
+      <a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a>
       <span class="article__headline__surface-loc"><?php the_field('places_minimum'); ?> à <?php the_field('places_maximum'); ?> places</span>
     </h3>
     <div class="article__text">
@@ -20,9 +20,7 @@
       </div>
         
     </div>
-    <div class="article__wrapper__link">
-        <a href="<?php the_permalink(); ?>" class="article__link__more" title="En savoir plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-    </div>
+
   </div>
 
 </article>

@@ -3,7 +3,12 @@
 	margin: 0 auto 3em auto;
 	background-color: $primaryColor;
 	display: flex;
+	flex-direction: row;
 	border-radius: 5px;
+	@include respond-to(handhelds){
+		width: 90%;
+		padding-bottom: 1em;
+	  }
 }
 
 .errorMsg {
@@ -12,4 +17,5 @@
 		family : $font-sans-serif;
 	}
 }
+
 

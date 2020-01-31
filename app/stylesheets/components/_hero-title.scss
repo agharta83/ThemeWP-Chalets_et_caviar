@@ -8,5 +8,9 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
+		@include respond-to(handhelds){
+			font-size: 4em;
+			padding: 1em;
+		  }
 	}
 }
