@@ -15,6 +15,9 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		@include respond-to(mobile){
+			height: 89vh;
+		  }
 	}
 
 	&-pins {

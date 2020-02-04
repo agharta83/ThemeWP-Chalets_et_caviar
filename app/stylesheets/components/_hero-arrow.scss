@@ -8,6 +8,9 @@
 		color: lighten($lightSilver, 25);
 		transition: 0.2s ease-in-out;
 		animation: jittery 4s infinite;
+		@include respond-to(mobile){
+			font-size: 1em;
+		}
 
 		&:hover {
 			animation: heartbeat 0.2s infinite;

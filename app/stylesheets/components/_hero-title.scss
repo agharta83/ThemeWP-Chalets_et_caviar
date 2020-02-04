@@ -15,6 +15,9 @@
 		@include respond-to(handhelds-landscape){
 			font-size: 4em;
 			padding: 1em;
-		  }
+		}
+		@include respond-to(mobile){
+			font-size: 2em;
+		}
 	}
 }

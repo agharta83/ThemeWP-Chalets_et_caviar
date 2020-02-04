@@ -35,11 +35,27 @@
       </div>
       <?php
       ?>
+
       <nav class="main-nav">
-        <a href="<?php echo home_url('/'); ?>" class="main-nav__link">Accueil</a>
-        <a href="<?php echo get_term_link($term = 'vente', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Ventes</a>
-        <a href="<?php echo get_term_link($term = 'location', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Locations</a>
-        <a href="#contact" class="main-nav__link">Contact</a>
+        <div class="menu-toggle">
+          
+            <a href="" class="main-nav__link menu-burger"><i class="fa fa-bars hamburger" aria-hidden="true"></i></a>
+            <ul class="mobile">
+              <li><a href="<?php echo home_url('/'); ?>" class="main-nav__link">Accueil</a></li>
+              <li><a href="<?php echo get_term_link($term = 'vente', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Ventes</a></li>
+              <li><a href="<?php echo get_term_link($term = 'location', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Locations</a></li>
+              <li><a href="#contact" class="main-nav__link">Contact</a></li>
+            </ul>
+
+        </div>
+        <ul class="desktop">
+          <li><a href="<?php echo home_url('/'); ?>" class="main-nav__link">Accueil</a></li>
+          <li><a href="<?php echo get_term_link($term = 'vente', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Ventes</a></li>
+          <li><a href="<?php echo get_term_link($term = 'location', $taxonomy = 'type_annonce'); ?>" class="main-nav__link">Locations</a></li>
+          <li><a href="#contact" class="main-nav__link">Contact</a></li>
+        </ul>
       </nav>
+      
+      
     </header>
 

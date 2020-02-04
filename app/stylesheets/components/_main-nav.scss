@@ -4,7 +4,7 @@
 	@include respond-to(mobile){
 		padding: 0;
 		margin: 0;
-	  }
+	}
 
 	&__link {
 		text-decoration: none;
@@ -13,8 +13,10 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		color: $lightSilver;
+		cursor: pointer;
 		@include respond-to(mobile){
-			font-size: 0.8em;
+			font-size: 0.6em;
+			padding: 0 0.8em;
 		}
 
 		&:hover {
@@ -27,3 +29,52 @@
 		}
 	}
 }
+
+.menu-toggle {
+	@include respond-to(mobile){
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+	}
+}
+
+.menu-burger {
+	font-size: 1.5em;
+	padding-top: 0.5em;
+
+	&:hover {
+		color: $gold;
+		border: none;
+	}
+}
+
+.mobile {
+	@include respond-to(mobile){
+		display: none;
+	}
+	
+}
+
+.open {
+	@include respond-to(mobile){
+		display: flex;
+		padding: 0;
+		margin: 0 0 0.5em 0;
+	}	
+}
+
+.main-nav-toggle {
+	@include respond-to(mobile){
+		width: 100%;
+	}
+	
+}
+
+
+.desktop {
+	@include respond-to(mobile){
+		display: none;
+	}
+}
+

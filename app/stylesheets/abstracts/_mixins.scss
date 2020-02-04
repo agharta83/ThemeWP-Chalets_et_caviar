@@ -1,9 +1,9 @@
 /* Responsive Mixins */
 $small-desktop: 960px;
 $large-desktop: 1200px;
-$handheld: 768px; // OK
-$handhelds-landscape: 1024px; // OK
-$mobile: 640px; // WIP
+$handheld: 768px;
+$handhelds-landscape: 1024px;
+$mobile: 320px;
 $mobile-landscape: 480px;
 
 @mixin respond-to($media) {
@@ -22,18 +22,14 @@ $mobile-landscape: 480px;
                         and (orientation : landscape){ @content; }
     }
     @if $media == mobile {
-    @media only screen and (max-width: $mobile) { @content; }
+    @media only screen  and (min-width: $mobile)
+                        and (min-height: $mobile-landscape)
+                        { @content; }
     }
     @if $media == mobile-landscape {
-    @media only screen  and (min-width: 320px)
+    @media only screen  and (min-width: $mobile)
                         and (max-width: $mobile-landscape)
                         and (orientation : landscape) { @content; }
-    }
-    @if $media == retina {
-    @media (-webkit-min-device-pixel-ratio: 2) { @content; }
-    }
-    @if $media == iphone5 {
-    @media only screen and (device-aspect-ratio: 40/71) { @content }
     }
 }
 

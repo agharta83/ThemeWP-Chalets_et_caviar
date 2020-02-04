@@ -6,7 +6,6 @@
 	@include respond-to(mobile){
 		margin: 0 0.5em;
 		align-items: flex-start;
-		
 	}
 
 	& a {
@@ -17,7 +16,7 @@
 		color: $lightSilver;
 		text-decoration: none;
 		@include respond-to(mobile){
-			font-size: 1.5em;
+			font-size: 1em;
 		}
 
 		&:hover {
@@ -26,8 +25,18 @@
 	}
 
 	&-baseline {
-		font-size: 0.6em;
+		font-size: 0.3em;
 		font-weight: bold;
 		color: $lightSilver;
+		@include respond-to(mobile){
+			font-size: 0.6em;
+		}
 	}
+}
+
+.hidden {
+	@include respond-to(mobile){
+		display: none;
+	}
+	
 }
