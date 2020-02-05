@@ -15,8 +15,9 @@
                     <p class="article__excerpt"><?php the_excerpt(); ?></p>
                     <p class="article__item"><span class="article__icone"><i class="fa fa-bed" aria-hidden="true"></i></span></i><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('nb_chambres'); ?></p>
                     <p class="article__item"><span class="article__icone"><i class="fa fa-bath" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('nb_sdb'); ?></p>
-                    <p class="article__item"><span class="article__icone"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('spec'); ?></p>
                     <p class="article__item"><span class="article__icone"><i class="fa fa-eur" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('prix'); ?></p>
+                    <p class="article__item"><span class="article__icone"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span><i class="fa fa-caret-right article__icone-arrow" aria-hidden="true"></i><?php the_field('spec'); ?></p>
+                    
                 </div>
                   
               </div>

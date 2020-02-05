@@ -8,6 +8,14 @@
 		background-color: $primaryColor;
 		position: relative;
 		border-radius: 5px;
+
+		@include respond-to(mobile){
+			width: 30%;
+			height: 45%;
+			align-self: flex-start;
+			margin: 1em 1em 0 1em;
+		}
+		/*
 		@include respond-to(handhelds){
 			width: 45%;
 			height: 70%;
@@ -20,6 +28,7 @@
 			margin-left: 2em;
 			align-self: center;	
 		}
+		*/
 
 		&--reverse {
 			align-self: flex-end;
@@ -30,6 +39,14 @@
 			background-color: $primaryColor;
 			position: relative;
 			border-radius: 5px;
+
+			@include respond-to(mobile){
+				width: 30%;
+				height: 45%;
+				align-self: flex-end;
+				margin: 0 1em 0 0;
+			}
+			/*
 			@include respond-to(handhelds){
 				width: 45%;
 				height: 70%;
@@ -40,6 +57,7 @@
 				height: 85%;
 				margin-right: 2em;	
 			}
+			*/
 		}
 	}
 
@@ -69,13 +87,18 @@
 				size: 3em;
 			}
 			color: lighten($gold, 35);
+
+			@include respond-to(mobile){
+				font-size: 1.2em;
+			}
+			/*
 			@include respond-to(handhelds){
 				font-size: 2.5em;
 			}
 			@include respond-to(handhelds-landscape){
 				font-size: 2.5em;
-			  }
-
+			}
+			*/
 			&--reverse {
 				position: absolute;
 				z-index: 5;
@@ -85,12 +108,18 @@
 					size: 3em;
 				}
 				color: lighten($gold, 35);
+
+				@include respond-to(mobile){
+					font-size: 1.2em;
+				}
+				/*
 				@include respond-to(handhelds){
 					font-size: 2.5em;
 				}
 				@include respond-to(handhelds-landscape){
 					font-size: 2.5em;
-				  }
+				}
+				*/
 			}
 		}
 	}

@@ -11,6 +11,21 @@
 		padding: 0;
 		display: inline-block;
 		position: relative;
+
+		@include respond-to(mobile){
+			font-size: 1em;
+			margin: 0;
+			text-align: right;
+		}
+
+		& > a {
+			color: $lightSilver;;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		
+		/*
 		@include respond-to(handhelds){
 			font-size: 1.2em;
 			text-align: right;
@@ -21,6 +36,7 @@
 			text-align: right;
 			margin: 0 0 0.5em 0;
 		}
+		*/
 
 		&--reverse {
 			font: {
@@ -34,6 +50,19 @@
 			padding: 0;
 			display: inline-block;
 			position: relative;
+
+			@include respond-to(mobile){
+				font-size: 1em;
+				margin: 0;
+				text-align: left;
+			}
+
+			& > a {
+				color: $lightSilver;;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			/*
 			@include respond-to(handhelds){
 				font-size: 1.2em;
 				text-align: left;
@@ -44,6 +73,7 @@
 				text-align: left;
 				margin: 0 0 0.5em 0;
 			}
+			*/
 		}
 
 		&__surface {
@@ -60,6 +90,12 @@
 			padding: 0.2em 0.4em;
 			background: lighten($gold, 35);
 			border-radius: 4px;
+			
+			@include respond-to(mobile){
+				display: inline;
+				margin: 0 0.5em;
+			}
+			/*
 			@include respond-to(handhelds){
 				display: inline;
 				margin-left: 1em;
@@ -68,6 +104,7 @@
 				display: inline;
 				margin-left: 1em;
 			}
+			*/
 
 			&-loc {
 				display: block;
@@ -83,6 +120,12 @@
 				padding: 0.2em 0.4em;
 				background: lighten($gold, 35);
 				border-radius: 4px;
+
+				@include respond-to(mobile){
+					display: inline;
+					margin: 0 0.5em;
+				}
+				/*
 				@include respond-to(handhelds){
 					display: inline;
 					margin-left: 1.5em;
@@ -90,7 +133,8 @@
 				@include respond-to(handhelds-landscape){
 					display: inline;
 					margin-left: 1.5em;
-				  }
+				}
+				*/
 			}
 		}
 	}

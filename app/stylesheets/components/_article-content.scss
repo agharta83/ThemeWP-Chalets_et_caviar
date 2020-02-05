@@ -2,6 +2,13 @@
 	&__content {
 		padding-right: 2em;
 		text-align: right;
+		@include respond-to(mobile){
+			font-size: 1em;
+			padding-right: 0.5em;
+			text-align: right;
+			width: 60%;
+		}
+		/*
 		@include respond-to(handhelds){
 			width: 45%;
 			font-size: 1em;
@@ -14,12 +21,20 @@
 			text-align: right;
 			padding: 0;
 		}
+		*/
 
 		&--reverse {
 			padding-right: 2em;
 			text-align: left;
 			padding-right: 0;
 			padding-left: 2em;
+			@include respond-to(mobile){
+				font-size: 1em;
+				padding-left: 0.5em;
+				text-align: left;
+				width: 60%;
+			}
+			/*
 			@include respond-to(handhelds){
 				width: 45%;
 				font-size: 1em;
@@ -32,6 +47,7 @@
 				text-align: left;
 				padding: 0 0 0 0.3em;
 			}
+			*/
 		}
 	}
 
@@ -50,6 +66,7 @@
 		&__wrapper {
 			width: 100%;
 			height: 370px;
+			/*
 			@include respond-to(handhelds){
 				height: 100%;
 				margin: 0;
@@ -58,9 +75,15 @@
 				height: 100%;
 				margin: 0;
 			}
+			*/
 
 			& p:nth-child(2) {
 				height: 80px;
+				@include respond-to(mobile){
+					font-size: 0.8em;
+					height: 25px;
+				}
+				/*
 				@include respond-to(handhelds){
 					height: 35px;
 					margin: 0;
@@ -69,6 +92,7 @@
 					height: 100%;
 					margin: 0;
 				}
+				*/
 
 			}
 		}
@@ -77,6 +101,14 @@
 	&__item {
 		border-bottom: 1px solid $lightSilver;
 		padding-bottom: 0.8em;
+		@include respond-to(mobile){
+			height: 20px;
+			font-size: 0.8em;
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+		/*
 		@include respond-to(handhelds){
 			padding: 0 0 0.2em 0;
 			margin: 0;
@@ -84,7 +116,8 @@
 		@include respond-to(handhelds-landscape){
 			padding: 0 0 0.2em 0;
 			margin: 0;
-		  }
+		}
+		*/
 	}
 
 	&__icone {
@@ -94,12 +127,17 @@
 		border-radius: 20%;
 		color: $lightSilver;
 		background-color: $primaryColor;
+		@include respond-to(mobile){
+			font-size: 0.6em;
+		}
+		/*
 		@include respond-to(handhelds){
 			font-size: 0.8em;
 		}
 		@include respond-to(handhelds-landscape){
 			font-size: 0.8em;
-		  }
+		}
+		*/
 
 		&-arrow {
 			padding: 0.8em;
@@ -110,6 +148,9 @@
 /* Surcharge font awesome */
 .fa-eur {
 	padding: 0.4em !important;
+	@include respond-to(mobile){
+		padding: 0 2px !important;
+	}
 }
 
 .fa-thumbs-up {
@@ -118,4 +159,7 @@
 
 .fa-bath {
 	padding: 0.1em !important;
+	@include respond-to(mobile){
+		padding: 0 0.5px !important;
+	}
 }

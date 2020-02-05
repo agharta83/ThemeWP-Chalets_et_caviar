@@ -2,6 +2,11 @@
 	width: 65%;
 	padding: 0.5em 1em;
 
+	@include respond-to(mobile){
+		width: 100%;
+		padding: 0;
+	}
+
 	label {
 		color: $lightSilver;
 		text-transform: uppercase;
@@ -11,13 +16,19 @@
 			weight: 700;
 			family: $font-serif;
 		}
+		@include respond-to(mobile){
+			padding: 0.3em 0;
+			font-size: 0.8em;
+		}
 	}
+	/*
 	@include respond-to(handhelds){
 		width: 85%;
 	}
 	@include respond-to(handhelds-landscape){
 		width: 85%;
-	  }
+	}
+	*/
 
 	input[type=text],
 	input[type=email],
@@ -32,10 +43,19 @@
 		width: 100%;
 		border: none;
 		background-color: lighten($gold, 35);
+		@include respond-to(mobile){
+			width: 99%;
+			align-items: center;
+			padding: 0 0.1em;
+
+		}
 	}
 
 	textarea {
 		height: 10em;
+		@include respond-to(mobile){
+			height: 3em;
+		}
 	}
 
 	button[type=submit] {
@@ -53,12 +73,20 @@
 		display: block;
 		margin: auto;
 		width: 100px;
+		@include respond-to(mobile){
+			margin-top: 0.5em;
+			font-size: 0.6em;
+			padding: 0.5em;
+			width: 60px;
+		}
+		/*
 		@include respond-to(handhelds){
 			margin-bottom: 1em;
 		}
 		@include respond-to(handhelds-landscape){
 			margin-bottom: 1em;
-		  }
+		}
+		*/
 
 		&:hover {
 			background-color: lighten($primaryColor, 5);

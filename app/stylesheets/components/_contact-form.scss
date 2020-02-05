@@ -4,12 +4,19 @@
 	height: 67vh;
 	padding: 2em;
 	align-items: center;
+	
+	@include respond-to(mobile){
+		padding: 0.5em;
+		height: 30vh;
+	}
+	/*
 	@include respond-to(handhelds){
 		padding: 0.5em;
 	}
 	@include respond-to(handhelds-landscape){
 		padding: 0.5em;
-	  }
+	}
+	*/
 
 	form {
 		display: flex;

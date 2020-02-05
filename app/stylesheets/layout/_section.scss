@@ -5,6 +5,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	//align-content: flex-start;
 	margin: 0 auto;
 
 	&-hero {
@@ -38,6 +39,11 @@
 			weight: bold;
 		}
 		color: $lightSilver;
+		@include respond-to(mobile){
+			font-size: 1.5em;
+			margin-top: 2.4em;
+		}
+		/*
 		@include respond-to(handhelds){
 			width: 100%;
 			margin-bottom: 0.5em;
@@ -47,6 +53,7 @@
 			width: 100%;
 			margin-bottom: 0.5em;
 		}
+		*/
 
 		& span {
 			color: $primaryColor-opacity;
@@ -59,6 +66,7 @@
 }
 
 #ventes {
+	/*
 	@include respond-to(handhelds){
 		display: flex;
 		flex-direction: column;
@@ -69,10 +77,12 @@
 		flex-direction: column;
 		margin: 0 auto;
 	}
+	*/
 	
 }
 
 #locations {
+	/*
 	@include respond-to(handhelds){
 		display: flex;
 		flex-direction: column;
@@ -83,9 +93,11 @@
 		flex-direction: column;
 		margin: 0 auto;
 	}
+	*/
 }
 
 #contact {
+	/*
 	@include respond-to(handhelds){
 		display: flex;
 		flex-direction: column;
@@ -96,6 +108,7 @@
 		flex-direction: column;
 		margin: 0 auto;
 	}
+	*/
 }
 
 .wrapper > section:last-child {

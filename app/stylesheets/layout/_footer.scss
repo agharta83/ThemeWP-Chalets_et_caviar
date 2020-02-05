@@ -11,6 +11,9 @@
 	font: {
 		family: $font-cursive;
 	}
+	@include respond-to(mobile){
+		padding: 0;
+	}
 }
 
 .copyright__title {
