@@ -27,8 +27,8 @@ $mobile-landscape: 480px;
                         { @content; }
     }
     @if $media == mobile-landscape {
-    @media only screen  and (min-width: $mobile)
-                        and (max-width: $mobile-landscape)
+    @media only screen  and (max-width: $mobile-landscape)
+                        and (max-height: $mobile)
                         and (orientation : landscape) { @content; }
     }
 }
@@ -36,7 +36,7 @@ $mobile-landscape: 480px;
 /* To be used like this */
 
 body {
-  @include respond-to(mobile){
+  @include respond-to(mobile-landscape){
     // css code here
   }
 }

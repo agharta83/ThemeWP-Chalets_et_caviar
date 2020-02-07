@@ -1,7 +1,13 @@
 .main-nav {
 	padding: 1.5em 1em;
 	margin-right: 1.5em;
+
 	@include respond-to(mobile){
+		padding: 0;
+		margin: 0;
+	}
+
+	@include respond-to(mobile-landscape){
 		padding: 0;
 		margin: 0;
 	}
@@ -14,9 +20,14 @@
 		font-weight: bold;
 		color: $lightSilver;
 		cursor: pointer;
+
 		@include respond-to(mobile){
 			font-size: 0.6em;
 			padding: 0 0.8em;
+		}
+
+		@include respond-to(mobile-landscape){
+			font-size: 0.7em;
 		}
 
 		&:hover {
@@ -37,6 +48,10 @@
 		flex-direction: row-reverse;
 		align-items: flex-end;
 	}
+
+	@include respond-to(mobile-landscape){
+		display: none;
+	  }
 }
 
 .menu-burger {
@@ -75,6 +90,10 @@
 .desktop {
 	@include respond-to(mobile){
 		display: none;
+	}
+
+	@include respond-to(mobile-landscape){
+		display: flex;
 	}
 }
 

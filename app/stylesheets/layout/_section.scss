@@ -16,9 +16,17 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+
 		@include respond-to(mobile){
 			height: 89vh;
-		  }
+		}
+
+		@include respond-to(mobile-landscape){
+			height: 84vh;
+		}
+
+
+
 	}
 
 	&-pins {
@@ -39,9 +47,15 @@
 			weight: bold;
 		}
 		color: $lightSilver;
+
 		@include respond-to(mobile){
 			font-size: 1.5em;
 			margin-top: 2.4em;
+		}
+
+		@include respond-to(mobile-landscape){
+			font-size: 1em;
+			margin-top: 3.2em;
 		}
 		/*
 		@include respond-to(handhelds){

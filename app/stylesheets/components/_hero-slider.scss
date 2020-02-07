@@ -15,15 +15,23 @@
 				size: 2em;
 				family: $font-sans-serif;
 			}
+
+			@include respond-to(mobile){
+				font-size: 1em;
+			}
+
+			@include respond-to(mobile-landscape){
+				font-size: 1em;
+			}
+			/*
 			@include respond-to(handhelds){
 				font-size: 1.5em;
 			}
 			@include respond-to(handhelds-landscape){
 				font-size: 1.5em;
 			}
-			@include respond-to(mobile){
-				font-size: 1em;
-			}
+			*/
+			
 		}
 	}
 }
@@ -36,6 +44,9 @@
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-name: anim-1;
+	@include respond-to(mobile-landscape){
+		width: 58%;
+	}
 }
 
 .slide2 {
@@ -46,6 +57,9 @@
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-name: anim-2;
+	@include respond-to(mobile-landscape){
+		width: 58%;
+	}
 }
 
 .slide3 {
@@ -56,6 +70,9 @@
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-name: anim-3;
+	@include respond-to(mobile-landscape){
+		width: 58%;
+	}
 }
 
 @keyframes anim-1 {

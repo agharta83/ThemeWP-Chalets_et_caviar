@@ -8,7 +8,11 @@
 	*/
 	
 	@include respond-to(mobile){
-			padding: 4.5em 0.2em 0.2em 0.2em;
+		padding: 4.5em 0.2em 0.2em 0.2em;
+	}
+
+	@include respond-to(mobile-landscape){
+		padding: 0.2em;
 	}
 	/*
 	@include respond-to(handhelds){
@@ -27,6 +31,12 @@
 		display: flex;
 
 		@include respond-to(mobile){
+			padding: 0.3em;
+		}
+
+		@include respond-to(mobile-landscape){
+			display: flex;
+			flex-direction: column;
 			padding: 0.3em;
 		}
 		/*
@@ -56,6 +66,11 @@
 				margin: 0;
 				font-size: 0.8em;
 			}
+
+			@include respond-to(mobile-landscape){
+				margin: 0;
+				font-size: 0.6em;
+			}
 			/*
 			@include respond-to(handhelds){
 				margin: 0 auto;
@@ -72,7 +87,12 @@
 			flex-basis: 30%;
 			text-align: center;
 			align-self: center;
+
 			@include respond-to(mobile){
+				font-size: 0.8em;
+			}
+
+			@include respond-to(mobile-landscape){
 				font-size: 0.8em;
 			}
 		}
@@ -87,8 +107,17 @@
 				text-align: right;
 			}
 
+			@include respond-to(mobile-landscape){
+				font-size: 0.8em;
+				text-align: center;
+			}
+
 			& > p {
 				@include respond-to(mobile){
+					margin: 0;
+				}
+
+				@include respond-to(mobile-landscape){
 					margin: 0;
 				}
 			}

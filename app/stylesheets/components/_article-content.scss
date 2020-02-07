@@ -2,12 +2,18 @@
 	&__content {
 		padding-right: 2em;
 		text-align: right;
+
 		@include respond-to(mobile){
 			font-size: 1em;
 			padding-right: 0.5em;
 			text-align: right;
 			width: 60%;
 		}
+
+		@include respond-to(mobile-landscape){
+			font-size: 0.8em;
+			padding-right: 0.2em;
+  		}
 		/*
 		@include respond-to(handhelds){
 			width: 45%;
@@ -28,11 +34,16 @@
 			text-align: left;
 			padding-right: 0;
 			padding-left: 2em;
+
 			@include respond-to(mobile){
 				font-size: 1em;
 				padding-left: 0.5em;
 				text-align: left;
 				width: 60%;
+			}
+			@include respond-to(mobile-landscape){
+				font-size: 0.8em;
+				padding-left: 0.2em;
 			}
 			/*
 			@include respond-to(handhelds){
@@ -79,9 +90,15 @@
 
 			& p:nth-child(2) {
 				height: 80px;
+
 				@include respond-to(mobile){
 					font-size: 0.8em;
 					height: 25px;
+				}
+
+				@include respond-to(mobile-landscape){
+					font-size: 0.8em;
+					height: 50px;
 				}
 				/*
 				@include respond-to(handhelds){
@@ -101,12 +118,22 @@
 	&__item {
 		border-bottom: 1px solid $lightSilver;
 		padding-bottom: 0.8em;
+
 		@include respond-to(mobile){
+			display: flex;
 			height: 20px;
 			font-size: 0.8em;
 			padding: 0;
 			margin: 0;
 			border: none;
+		}
+
+		@include respond-to(mobile-landscape){
+			font-size: 0.8em;
+			padding: 0 0 0.2em 0;
+			margin: 0;
+			border: none;
+			word-break: normal;
 		}
 		/*
 		@include respond-to(handhelds){
@@ -127,7 +154,12 @@
 		border-radius: 20%;
 		color: $lightSilver;
 		background-color: $primaryColor;
+
 		@include respond-to(mobile){
+			font-size: 0.6em;
+		}
+
+		@include respond-to(mobile-landscape){
 			font-size: 0.6em;
 		}
 		/*
@@ -141,6 +173,10 @@
 
 		&-arrow {
 			padding: 0.8em;
+
+			@include respond-to(mobile-landscape){
+				padding: 0.2em;
+			}
 		}
 	}
 }
@@ -151,6 +187,10 @@
 	@include respond-to(mobile){
 		padding: 0 2px !important;
 	}
+	@include respond-to(mobile-landscape){
+		padding: 0 2px !important;
+	}
+	
 }
 
 .fa-thumbs-up {

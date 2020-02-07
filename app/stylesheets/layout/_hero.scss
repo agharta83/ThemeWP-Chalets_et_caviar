@@ -3,6 +3,7 @@
 	height: 90vh;
 	text-align: center;
 	color: $lightSilver;
+
 	@include respond-to(mobile){
 		min-height: 60vh;
 	}
